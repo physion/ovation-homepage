@@ -10,7 +10,7 @@
 contextBaseDir: conf/context
 
 # base directory to load templates from, defaults to current working dir
-templateBaseDir: work/hubthemes/vast
+templateBaseDir: work/hubthemes/ovation
 
 # map extension resource ids to local template paths, for attached_stylesheets
 #
