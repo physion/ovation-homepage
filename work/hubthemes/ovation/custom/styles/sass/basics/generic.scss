@@ -1,13 +1,78 @@
-// Variables
+/*** VARIABLES ***/
+$outer-padding: 20px;
+$outer-max-width: 1024px;
 
+html, body {
+
+}
 
 body {
-  background-color: black;
-  p {
-    color:white;
-  }
-  button {
-    color:white;
-    background-color: red;
-  }
+	background-color:$background-gray;
+	font-family:$proxima-nova-regular;
+	font-weight:400;
+	font-size:16px;
+}
+
+h1 {
+  font-size:2.25em;
+  color: $primary-font-gray;
+}
+
+h2 {
+  font-family: $proxima-nova-semibold;
+  font-size:1.5em;
+  color: $primary-font-gray;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-family: $proxima-nova-semibold;
+  font-size:1em;
+  line-height: 1.2em;
+  color: $primary-font-gray;
+}
+
+h4 {
+  font-size:.8125em;
+  font-weight: normal;
+  font-family: $proxima-nova-semibold;
+}
+
+hr {
+  border: 1px solid #979797;
+	margin:20px auto;
+	width:100%;
+}
+
+strong, b {
+  font-weight: normal;
+  font-family: $proxima-nova-semibold;
+}
+
+em, i {
+	font-weight: normal;
+  font-family: $proxima-nova-italic;
+}
+
+/*
+p {
+  line-height: 1.4em;
+  font-family: $proxima-nova-regular;
+}
+*/
+
+a, a:visited {
+  color: $main-green;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  &:hover { color: darken($main-green, 15%); }
+}
+
+button {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
 }
