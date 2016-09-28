@@ -1,3 +1,10 @@
+//Vendor
 @import 'vendor/normalize';
 @import 'vendor/bootstrap';
-@import 'base';
+
+//Basics and Setup
+@import 'basics/mixins.scss';
+@import 'basics/breakpoints';
+@import 'basics/colors.scss';
+@import 'basics/fonts.scss';
+@import 'basics/generic';

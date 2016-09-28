@@ -10,7 +10,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'work/hubthemes/ovation/custom/styles/sass',
-          src: ['**/*.scss'],
+          src: ['style.scss'],
           dest: 'work/hubthemes/ovation/custom/page/css',
           ext: '.css'
         }]
