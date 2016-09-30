@@ -14,6 +14,7 @@ body {
 	font-family:$proxima-nova-regular;
 	font-weight:400;
 	font-size:18px;
+	padding:0px !important;
 }
 
 h1 {
@@ -78,4 +79,17 @@ button {
 
 .hidden {
   display: none !important;
+}
+
+@media (max-width: 910px) and  (min-width:401px) {
+  .overly_btn_block {
+    display:block;
+  }
+  body {
+    padding:0px;
+  }
+  .widget-type-logo {
+    width:200px !important;
+    float:left;
+  }
 }

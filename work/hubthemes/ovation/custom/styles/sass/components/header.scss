@@ -2,6 +2,15 @@
   padding:0px;
 }
 
+.header-container-wrapper {
+  .span12 {
+    width:100% !important;
+  }
+  .widget-type-logo {
+    float:left !important;
+  }
+}
+
 .flex-menu {
   h1 {
     font-family:$proxima-nova-semibold;
@@ -13,16 +22,12 @@
     list-style: none;
   }
   ul > li > a {
-    font-size:48px !important;
     font-family:$proxima-nova-light;
     color: #979797 !important;
     &:hover {
       color: #585858 !important;
       text-decoration:none;
     }
-  }
-  span a {
-    font-size:48px !important;
   }
   & > li:first-child {
     padding:20px;
@@ -94,7 +99,7 @@ header {
   .overly_btn_block {
     padding: 15px 0px 0px;
     #overly_close {
-      margin-top:-10px;
+      position:absolute;
     }
     span {
       cursor: pointer;
@@ -108,12 +113,30 @@ header {
   }
 }
 
-@media (max-width: 910px) {
-  .overly_btn_block {
-    display:block;
+@media (min-width:401px) {
+  .flex-menu {
+    ul > li > a {
+      font-size:48px !important;
+    }
+    span a {
+      font-size:48px !important;
+    }
   }
+  #overly_close {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 910px) {
   .flex-collapse {
     display:none !important;
+  }
+}
+
+@media (max-width: 910px) and  (min-width:401px) {
+  .overly_btn_block {
+    display:block;
   }
   body {
     padding:0px;
@@ -121,5 +144,26 @@ header {
   .widget-type-logo {
     width:200px !important;
     float:left;
+  }
+}
+
+@media (max-width:400px) {
+  .flex-menu {
+    h1 {
+      font-size: 24px !important;
+    }
+    ul > li > a {
+      font-size:24px !important;
+    }
+    span a {
+      font-size:24px !important;
+    }
+  }
+  #overly_close {
+    top: 10px;
+    right: 10px;
+  }
+  .widget-type-logo {
+    width:160px !important;
   }
 }
