@@ -19,3 +19,40 @@
   .lt-ie9 & { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity-ie})"; } // IE8
   .lt-ie8 & { filter: alpha(opacity=$opacity-ie); } // IE 5-7
 }
+
+@mixin transition($properties...) {
+
+  // Fix for vendor-prefix transform property
+  $needs-prefixes: false;
+  $webkit: ();
+  $moz: ();
+  $spec: ();
+
+  // Create lists for vendor-prefixed transform
+  @each $list in $properties {
+    @if nth($list, 1) == "transform" {
+      $needs-prefixes: true;
+      $list1: -webkit-transform;
+      $list2: -moz-transform;
+      $list3: ();
+
+      @each $var in $list {
+        $list3: join($list3, $var);
+
+        @if $var != "transform" {
+          $list1: join($list1, $var);
+          $list2: join($list2, $var);
+        }
+      }
+
+      $webkit: append($webkit, $list1);
+      $moz:    append($moz,    $list2);
+      $spec:   append($spec,   $list3);
+    } @else {
+      $webkit: append($webkit, $list, comma);
+      $moz:    append($moz,    $list, comma);
+      $spec:   append($spec,   $list, comma);
+    }
+  }
+
+}

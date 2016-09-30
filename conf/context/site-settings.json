@@ -1,4 +1,5 @@
 {
+    "local": true,
     "id": 10,
     "portal_id": 123,
     "site_id": "1",
@@ -10,9 +11,10 @@
     "company_phone": "800-555-1234",
     "company_street_address1": "123 Main St",
     "company_street_address2": "Suite 201",
+
     "attached_stylesheets": [
         {
-            "type": "cos_extension_resource",
+            "type": "ovation",
             "id": 1
         }
     ],

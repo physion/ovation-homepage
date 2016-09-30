@@ -1,6 +1,8 @@
 //Vendor
 @import 'vendor/normalize';
 @import 'vendor/bootstrap';
+@import 'vendor/jquery.overly';
+@import 'vendor/fontawesome';
 
 //Basics and Setup
 @import 'basics/mixins.scss';
@@ -8,3 +10,8 @@
 @import 'basics/colors.scss';
 @import 'basics/fonts.scss';
 @import 'basics/generic.scss';
+
+//Components
+@import 'components/header.scss';
+@import 'components/footers.scss';
+@import 'components/button.scss';

@@ -1,16 +1,19 @@
 /*** VARIABLES ***/
 $outer-padding: 20px;
 $outer-max-width: 1024px;
+$hover-animation-speed: 0.35s;
+$fast-hover-animation-speed: 0.1s;
+$darken-percentage: 10%;
 
 html, body {
 
 }
 
 body {
-	background-color:$background-gray;
+	background-color:#ffffff;
 	font-family:$proxima-nova-regular;
 	font-weight:400;
-	font-size:16px;
+	font-size:18px;
 }
 
 h1 {

@@ -1,0 +1,125 @@
+.header-container-wrapper .container-fluid {
+  padding:0px;
+}
+
+.flex-menu {
+  h1 {
+    font-family:$proxima-nova-semibold;
+  }
+  ul {
+    margin:0px;
+  }
+  li {
+    list-style: none;
+  }
+  ul > li > a {
+    font-size:48px !important;
+    font-family:$proxima-nova-light;
+    color: #979797 !important;
+    &:hover {
+      color: #585858 !important;
+      text-decoration:none;
+    }
+  }
+  span a {
+    font-size:48px !important;
+  }
+  & > li:first-child {
+    padding:20px;
+    border-bottom: 1px solid #979797;
+  }
+  .hs-menu-wrapper {
+    text-align:center;
+    li {
+      padding:30px 0px;
+      border-bottom: 1px solid #979797;
+    }
+    .hs-menu-children-wrapper {
+      display:none;
+    }
+  }
+  .cta-container {
+    text-align:center;
+    padding-top:10px;
+  }
+}
+
+header {
+  padding: 20px 40px;
+  color: #979797;
+  font-family:$proxima-nova-light;
+  box-shadow: 0px 3px 10px 0px rgba(187,187,187,0.50);
+
+  a {
+
+  }
+  .hs-menu-wrapper {
+    padding:20px 0px;
+    a {
+      color: #979797 !important;
+      &:hover {
+        color: #585858 !important;
+        text-decoration:none;
+      }
+    }
+  }
+
+  .hs-menu-wrapper > ul {
+    margin:0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hs-menu-wrapper > ul > li {
+    display:inline;
+  }
+
+  ul {
+    list-style: none;
+    &.hs-menu-children-wrapper {
+      display:none;
+    }
+  }
+
+  .hs-cta-wrapper {
+      margin:10px auto;
+      text-align:center;
+      display:block;
+  }
+
+  .flex-trigger {
+    font-size: 24px;
+  }
+
+  .overly_btn_block {
+    padding: 15px 0px 0px;
+    #overly_close {
+      margin-top:-10px;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 911px) {
+  .overly_btn_block {
+    display:none;
+  }
+}
+
+@media (max-width: 910px) {
+  .overly_btn_block {
+    display:block;
+  }
+  .flex-collapse {
+    display:none !important;
+  }
+  body {
+    padding:0px;
+  }
+  .widget-type-logo {
+    width:200px !important;
+    float:left;
+  }
+}

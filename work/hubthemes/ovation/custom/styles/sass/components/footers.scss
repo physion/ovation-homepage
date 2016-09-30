@@ -1,0 +1,14 @@
+.footer-container-wrapper {
+  &.homepage {
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    max-height:200px;
+    .container-fluid {
+      padding:0px;
+    }
+    img {
+      width:100%;
+    }
+  }
+}
