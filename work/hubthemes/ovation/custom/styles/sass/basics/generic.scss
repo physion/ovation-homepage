@@ -15,6 +15,11 @@ body {
 	font-weight:400;
 	font-size:18px;
 	padding:0px !important;
+	min-height: 100%;
+}
+
+.body-container {
+	padding: 0px;
 }
 
 h1 {

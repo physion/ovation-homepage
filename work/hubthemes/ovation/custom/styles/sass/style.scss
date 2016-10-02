@@ -1,8 +1,9 @@
 //Vendor
-@import 'vendor/normalize';
-@import 'vendor/bootstrap';
-@import 'vendor/jquery.overly';
-@import 'vendor/fontawesome';
+@import 'vendor/normalize.scss';
+@import 'vendor/bootstrap.scss';
+@import 'vendor/jquery.overly.scss';
+@import 'vendor/fontawesome.scss';
+@import 'vendor/jquery.fullPage.scss';
 
 //Basics and Setup
 @import 'basics/mixins.scss';
@@ -15,3 +16,6 @@
 @import 'components/header.scss';
 @import 'components/footers.scss';
 @import 'components/button.scss';
+
+//Pages
+@import 'pages/index.scss';

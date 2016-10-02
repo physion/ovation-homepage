@@ -1,8 +1,36 @@
+body{
+  &.fp-viewing-firstPage{
+    .header-container-wrapper {
+      background-color:transparent;
+
+      .hs-menu-wrapper {
+        a {
+          color:white !important;
+        }
+      }
+      .widget-type-logo {
+        g, text {
+          fill:white;
+        }
+      }
+      #overly_open {
+        color:white;
+      }
+    }
+  }
+}
+
+
 .header-container-wrapper .container-fluid {
   padding:0px;
 }
 
 .header-container-wrapper {
+  position:fixed;
+  width:100%;
+  background-color:white;
+  z-index:999;
+  transition: background-color 2s;
   .span12 {
     width:100% !important;
   }
@@ -61,9 +89,9 @@ header {
   .hs-menu-wrapper {
     padding:20px 0px;
     a {
-      color: #979797 !important;
+      color: #979797;
       &:hover {
-        color: #585858 !important;
+        color: #585858;
         text-decoration:none;
       }
     }

@@ -1,0 +1,79 @@
+.homepage {
+  #myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; /*cover video background */
+    z-index:-1;
+  }
+
+
+
+  &.fp-viewing-home {
+    ul {
+      li {
+        .fp-tooltip {
+          color:white !important;
+        }
+      }
+    }
+    .hs-cta-wrapper {
+      margin: 0 auto 5%;
+      display:table;
+      font-size:36px;
+      a {
+        padding: 10px 30px;
+      }
+    }
+
+    h1 {
+      color:#fff !important;
+      font-family: $proxima-nova-light !important;
+      line-height: 1.5em !important;
+    }
+
+    .main-wrapper {
+      margin-top: calc(100px + 2%);
+      padding:0px 5%;
+    }
+
+    #cycle-list {
+      margin:0px;
+      li {
+        display: inline-block;
+      }
+      li:last-child {
+        border-bottom: 1px solid white;
+      }
+      list-style:none;
+      a:hover {
+        text-decoration:none;
+      }
+      #list-1 {
+        opacity: .25;
+      }
+      #list-2 {
+        opacity: .5;
+      }
+      #list-3 {
+        opacity: .75;
+      }
+      #list-4 {
+        opacity: 1;
+        font-family:$proxima-nova-semibold;
+      }
+    }
+
+
+  }
+
+
+}
