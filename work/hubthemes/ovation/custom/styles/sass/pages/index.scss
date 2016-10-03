@@ -15,6 +15,32 @@
     z-index:-1;
   }
 
+  &:not(.fp-viewing-home) {
+    .main-container {
+      padding-left:5%;
+      padding-right:10%;
+      padding-top: 150px;
+      .left-column-image {
+        img {
+          width:100%;
+        }
+      }
+    }
+    h1 {
+      font-family:$proxima-nova-light;
+      line-height:1em;
+      margin-bottom:20px;
+    }
+    p {
+      font-family:$fanwood-text;
+      margin-bottom:10px;
+    }
+    a p span {
+      font-family:$proxima-nova-regular;
+      text-decoration:underline;
+    }
+  }
+
 
 
   &.fp-viewing-home {
@@ -41,14 +67,14 @@
     }
 
     .main-wrapper {
-      margin-top: calc(100px + 2%);
-      padding:0px 5%;
+      //margin-top: calc(100px + 2%);
+      padding:150px 5%;
     }
 
     #cycle-list {
       margin:0px;
       li {
-        display: inline-block;
+        display: inline-block !important;
       }
       li:last-child {
         border-bottom: 1px solid white;
@@ -76,4 +102,99 @@
   }
 
 
+  &.fp-viewing-collaboration {
+
+    .main-container-2 {
+
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .device-image {
+    display:none !important;
+  }
+  .mobile-cta {
+    display:none !important;
+  }
+}
+
+@media (max-width: 768px) and  (min-width:401px) {
+  .left-column-image {
+    display:none !important;
+  }
+  .homepage {
+    :not(.fp-viewing-home) {
+      h1, a {
+        text-align:center;
+      }
+      img {
+        max-height:150px;
+        margin:0px auto;
+        display:table;
+      }
+    }
+  }
+  .mobile-cta {
+    display:none !important;
+  }
+
+
+}
+
+@media (max-width: 768px) and  (min-width:401px) {
+  .left-column-image {
+    display:none !important;
+  }
+
+  .homepage {
+    &:not(.fp-viewing-home) {
+      h1, a {
+        text-align:center;
+      }
+      img {
+        max-height:200px;
+        margin:80px auto;
+        display:table;
+      }
+    }
+    .main-copy {
+      display:none !important;
+    }
+    .main-cta {
+      display:none !important;
+    }
+    .mobile-cta {
+      display:block;
+    }
+  }
+
+}
+
+@media (max-width: 400px) {
+  .left-column-image {
+    display:none !important;
+  }
+
+  .homepage {
+    &:not(.fp-viewing-home) {
+      h1, a {
+        text-align:center;
+      }
+      img {
+        max-height:200px;
+        margin:80px auto;
+        display:table;
+      }
+    }
+    .main-copy {
+      display:none !important;
+    }
+    .main-cta {
+      display:none !important;
+    }
+    .mobile-cta {
+      display:block;
+    }
+  }
 }

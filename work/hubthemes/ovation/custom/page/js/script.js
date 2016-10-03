@@ -10,13 +10,15 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
       //Navigation
       menu: '#menu',
-      lockAnchors: false,
+      //lockAnchors: false,
+      verticalCentered: true,
       anchors:['home', 'collaboration', 'sample-tracking', 'data-management'],
       navigation: true,
       navigationPosition: 'right',
       navigationTooltips: ['Home', 'Collaboration', 'Sample Tracking', 'Data Management'],
       showActiveTooltip: false,
-      slidesNavigation: true,
+      autoScrolling: true,
+      //slidesNavigation: true,
       loopBottom: true,
       onLeave: function(nextIndex, anchorLink, navigation){
         if (anchorLink == 1) {
