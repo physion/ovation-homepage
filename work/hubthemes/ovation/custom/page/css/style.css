@@ -8941,8 +8941,72 @@ button[disabled] {
 .about .venn-container {
   background: #F8F8F8;
   box-shadow: 0px 2px 4px 0px rgba(187, 187, 187, 0.5);
-  margin: 50px 0px;
-  height: 680px; }
+  margin: 50px 0px; }
+  .about .venn-container .venn-inner {
+    max-width: 940px;
+    float: none;
+    margin: 50px auto 0px; }
+  .about .venn-container h1 {
+    text-align: center; }
+  .about .venn-container h2 {
+    color: white;
+    font-size: 36px;
+    text-align: center; }
+  .about .venn-container p {
+    font-size: 24px; }
+  .about .venn-container #venn {
+    float: none;
+    margin: 0px auto;
+    height: 550px;
+    margin-top: 40px;
+    /* width:665px; */
+    position: relative; }
+  .about .venn-container #venn .circle {
+    height: 380px;
+    width: 380px;
+    border-radius: 180px;
+    -khtml-border-radius: 180px;
+    -moz-border-radius: 180px;
+    -webkit-border-radius: 180px;
+    display: table;
+    /* float: left; */
+    opacity: .8;
+    position: absolute; }
+  .about .venn-container #venn .circle .inner {
+    padding-top: 40px;
+    visibility: hidden; }
+  .about .venn-container #venn > .circle:nth-child(1) {
+    background-color: #51BA4B;
+    color: #FFF;
+    right: calc(50% - 35px); }
+  .about .venn-container #venn > .circle:nth-child(1) .inner ul {
+    margin-left: 65px; }
+  .about .venn-container #venn > .circle:nth-child(2) {
+    background-color: #FFA45B;
+    color: #FFF;
+    /* margin-left: -60px; */
+    left: calc(50% - 35px); }
+  .about .venn-container #venn > .circle:nth-child(2) .inner ul {
+    margin-left: 110px; }
+  .about .venn-container #venn ul {
+    padding-left: 0px;
+    font-size: 24px; }
+    .about .venn-container #venn ul li {
+      line-height: 1.5em; }
+  .about .venn-container .vertical-line {
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    border-left: 2px solid #979797;
+    top: 40%;
+    visibility: hidden; }
+  .about .venn-container #center-text {
+    width: 370px;
+    position: absolute;
+    left: calc(50% - 185px);
+    top: 70%;
+    visibility: hidden;
+    color: #979797; }
 .about .line-graph {
   padding: 0px 50px; }
   .about .line-graph h2 {
