@@ -12,10 +12,10 @@ $(document).ready(function() {
       menu: '#menu',
       //lockAnchors: false,
       verticalCentered: true,
-      anchors:['home', 'collaboration', 'sample-tracking', 'data-management'],
+      anchors:['home', 'collaboration', 'sample-tracking', 'data-management', 'enterprise'],
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: ['Home', 'Collaboration', 'Sample Tracking', 'Data Management'],
+      navigationTooltips: ['Home', 'Collaboration', 'Sample Tracking', 'Data Management', 'Enterprise'],
       showActiveTooltip: false,
       autoScrolling: true,
       //slidesNavigation: true,
@@ -31,6 +31,9 @@ $(document).ready(function() {
           $("footer h2").html('Data Management');
           $("footer #footer-nav-link").attr("href", "#data-management");
         } else if (anchorLink == 4) {
+          $("footer h2").html('Enterprise');
+          $("footer #footer-nav-link").attr("href", "#enterprise");
+        } else if (anchorLink == 5) {
           $("footer h2").html('Home');
           $("footer #footer-nav-link").attr("href", "#home");
         }
