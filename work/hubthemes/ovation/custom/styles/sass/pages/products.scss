@@ -1,0 +1,23 @@
+body {
+  &.products {
+    &.products-a {
+      background-color:#38A421;
+    }
+    .body-container {
+      padding-top:150px;
+      padding-left:5%;
+      padding-right:5%;
+      h1, h2 {
+        text-align: center;
+        color:white;
+      }
+      h2 {
+        font-family:$fanwood-text-italic;
+      }
+      h1 {
+        font-family:$proxima-nova-light;
+        margin-bottom:20px;
+      }
+    }
+  }
+}

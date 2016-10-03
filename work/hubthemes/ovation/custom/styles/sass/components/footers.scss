@@ -1,69 +1,73 @@
-.fp-viewing-home {
-  .footer-container-wrapper {
-    svg {
-      use:last-child {
-        fill-opacity:0;
-      }
-    }
-    .arrow {
-      background-color:white;
-    }
-    h2 {
-      color:white;
-    }
+.homepage {
+  &.fp-viewing-home {
     .footer-container-wrapper {
-      footer {
-        position:relative;
-      }
       .arrow {
         background-color:white;
-        -webkit-clip-path: polygon(50% 25%, 100% 0, 100% 10%, 50% 35%, 0 10%, 0 0);
-        clip-path: polygon(50% 25%, 100% 0, 100% 10%, 50% 35%, 0 10%, 0 0);
-        margin: 0px auto;
-        height: 75px;
-        width: 120px;
-        background-color:#979797;
       }
-      a {
-        position:absolute;
-        margin:0px auto;
-        display:block;
-        width:300px;
-        top:15%;
-        left:calc(50% - 150px);
-        &:hover {
-          text-decoration:none;
-        }
-      }
-
       h2 {
-        font-family:$fanwood-text-italic;
-        font-size:36px;
-        text-align:center;
-        color:#979797;
+        color:white;
       }
-
-      transition: fill-opacity 2s;
-      &.homepage {
-        position:fixed;
-        bottom:0px;
-        width:100%;
-        .container-fluid {
-          padding:0px;
-        }
-        .container-container {
-          filter:blur(5px);
-        }
-        svg {
-          width: 104%;
-          margin-left: -2%;
-          margin-bottom: -20px;
+      svg {
+        use:last-child {
+          fill-opacity:0;
         }
       }
     }
   }
+  .footer-container-wrapper {
+    footer {
+      position:relative;
+    }
+    .arrow {
+      background-color:white;
+      -webkit-clip-path: polygon(50% 25%, 100% 0, 100% 10%, 50% 35%, 0 10%, 0 0);
+      clip-path: polygon(50% 25%, 100% 0, 100% 10%, 50% 35%, 0 10%, 0 0);
+      margin: 0px auto;
+      height: 75px;
+      width: 120px;
+      background-color:#979797;
+    }
+    a {
+      position:absolute;
+      margin:0px auto;
+      display:block;
+      width:300px;
+      top:15%;
+      left:calc(50% - 150px);
+      &:hover {
+        text-decoration:none;
+      }
+    }
+
+    h2 {
+      font-family:$fanwood-text-italic;
+      font-size:36px;
+      text-align:center;
+      color:#979797;
+    }
+
+    transition: fill-opacity 2s;
+    &.homepage {
+      position:fixed;
+      bottom:0px;
+      width:100%;
+      .container-fluid {
+        padding:0px;
+      }
+      .container-container {
+        filter:blur(5px);
+      }
+      svg {
+        width: 104%;
+        margin-left: -2%;
+        margin-bottom: -20px;
+      }
+    }
+  }
+
 }
-body:not(.fp-viewing-home) {
+
+body:not(.homepage) {
   .footer-container-wrapper {
     background-color:#444444;
     .footer-container {

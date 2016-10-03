@@ -1,44 +1,5 @@
 
 $(document).ready(function() {
-  var inView = false;
-
-  function isScrolledIntoView(elem)
-  {
-      var docViewTop = $(window).scrollTop();
-      var docViewBottom = docViewTop + $(window).height();
-
-      var elemTop = $(elem).offset().top;
-      var elemBottom = elemTop + $(elem).height();
-
-      return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-  }
-
-  // Changing the defaults
-  window.sr = ScrollReveal({ reset: false });
-
-  // Customizing a reveal set
-  sr.reveal('#venn .left', {
-    origin: 'left',
-    duration: 2000,
-    distance: '500px' });
-
-  sr.reveal('#venn .right', {
-    origin: 'right',
-    duration: 2000,
-    distance: '500px',
-    afterReveal: function (domEl) {
-      sr.reveal('.inner', {
-        duration:1000
-      });
-      sr.reveal('.vertical-line', {
-        duration:1000
-      });
-      sr.reveal('#center-text', {
-        duration:1000
-      });
-    }
-  });
-
   $('.flex-menu').Overly_menu({
     'speed': 0,
     'color': '#f8f8f8',
@@ -71,9 +32,6 @@ $(document).ready(function() {
           $("footer #footer-nav-link").attr("href", "#data-management");
         } else if (anchorLink == 4) {
           $("footer h2").html('Enterprise');
-          $("footer #footer-nav-link").attr("href", "#enterprise");
-        } else if (anchorLink == 5) {
-          $("footer h2").html('Home');
           $("footer #footer-nav-link").attr("href", "#home");
         }
       },
