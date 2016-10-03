@@ -2,7 +2,7 @@
 @import 'vendor/normalize.scss';
 @import 'vendor/bootstrap.scss';
 @import 'vendor/jquery.overly.scss';
-@import 'vendor/fontawesome.scss';
+@import 'vendor/font-awesome.scss';
 @import 'vendor/jquery.fullPage.scss';
 
 //Basics and Setup
@@ -19,3 +19,4 @@
 
 //Pages
 @import 'pages/index.scss';
+@import 'pages/about.scss';

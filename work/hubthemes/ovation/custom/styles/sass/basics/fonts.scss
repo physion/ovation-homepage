@@ -17,3 +17,5 @@ $proxima-nova-lightitalic: 'Proxima Nova Light Italic', Arial, sans-serif;
 $fanwood-italic: 'Fanwood Italic', Georgia, serif;
 $fanwood-text-italic: 'Fanwood Text Italic', Georgia, serif;
 $fanwood-text: 'Fanwood Text', Georgia, serif;
+
+@include font-face('Fontawesome', 'fontawesome', normal, normal);

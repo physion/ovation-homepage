@@ -6018,15 +6018,15 @@ BASE SETTING
   -moz-transform-origin: 50% 50%; }
 
 /*!
- *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.5.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -6118,23 +6118,23 @@ BASE SETTING
   100% {
     transform: rotate(359deg); } }
 .fa-rotate-90 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   transform: scale(1, -1); }
 
 :root .fa-rotate-90,
@@ -7374,7 +7374,7 @@ BASE SETTING
 .fa-digg:before {
   content: "\f1a6"; }
 
-.fa-pied-piper:before {
+.fa-pied-piper-pp:before {
   content: "\f1a7"; }
 
 .fa-pied-piper-alt:before {
@@ -7500,6 +7500,7 @@ BASE SETTING
   content: "\f1ce"; }
 
 .fa-ra:before,
+.fa-resistance:before,
 .fa-rebel:before {
   content: "\f1d0"; }
 
@@ -8075,6 +8076,118 @@ BASE SETTING
 .fa-percent:before {
   content: "\f295"; }
 
+.fa-gitlab:before {
+  content: "\f296"; }
+
+.fa-wpbeginner:before {
+  content: "\f297"; }
+
+.fa-wpforms:before {
+  content: "\f298"; }
+
+.fa-envira:before {
+  content: "\f299"; }
+
+.fa-universal-access:before {
+  content: "\f29a"; }
+
+.fa-wheelchair-alt:before {
+  content: "\f29b"; }
+
+.fa-question-circle-o:before {
+  content: "\f29c"; }
+
+.fa-blind:before {
+  content: "\f29d"; }
+
+.fa-audio-description:before {
+  content: "\f29e"; }
+
+.fa-volume-control-phone:before {
+  content: "\f2a0"; }
+
+.fa-braille:before {
+  content: "\f2a1"; }
+
+.fa-assistive-listening-systems:before {
+  content: "\f2a2"; }
+
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
+  content: "\f2a3"; }
+
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
+  content: "\f2a4"; }
+
+.fa-glide:before {
+  content: "\f2a5"; }
+
+.fa-glide-g:before {
+  content: "\f2a6"; }
+
+.fa-signing:before,
+.fa-sign-language:before {
+  content: "\f2a7"; }
+
+.fa-low-vision:before {
+  content: "\f2a8"; }
+
+.fa-viadeo:before {
+  content: "\f2a9"; }
+
+.fa-viadeo-square:before {
+  content: "\f2aa"; }
+
+.fa-snapchat:before {
+  content: "\f2ab"; }
+
+.fa-snapchat-ghost:before {
+  content: "\f2ac"; }
+
+.fa-snapchat-square:before {
+  content: "\f2ad"; }
+
+.fa-pied-piper:before {
+  content: "\f2ae"; }
+
+.fa-first-order:before {
+  content: "\f2b0"; }
+
+.fa-yoast:before {
+  content: "\f2b1"; }
+
+.fa-themeisle:before {
+  content: "\f2b2"; }
+
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: "\f2b3"; }
+
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: "\f2b4"; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto; }
+
 /*!
  * fullPage 2.8.6
  * https://github.com/alvarotrigo/fullPage.js
@@ -8336,6 +8449,12 @@ $breakpoint-orientation-portrait: 'orientation: portrait';
   src: url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/fanwood_text-webfont.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/fanwood_text-webfont.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/fanwood_text-webfont.woff") format("woff2"), url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/fanwood_text-webfont.ttf") format("truetype"), url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/fanwood_text-webfont.svg#Fanwood Text") format("svg");
   font-weight: normal;
   font-style: italic; }
+@font-face {
+  font-family: "Fontawesome";
+  src: url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/fontawesome-webfont.eot");
+  src: url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/fontawesome-webfont.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/fontawesome-webfont.woff") format("woff2"), url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/fontawesome-webfont.ttf") format("truetype"), url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/fontawesome-webfont.svg#Fontawesome") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*** VARIABLES ***/
 body {
   background-color: #ffffff;
@@ -8382,12 +8501,10 @@ em, i {
   font-weight: normal;
   font-family: "Proxima Nova Italic", Arial, sans-serif; }
 
-/*
 p {
   line-height: 1.4em;
-  font-family: $proxima-nova-regular;
-}
-*/
+  font-family: "Fanwood Text", Georgia, serif; }
+
 a, a:visited {
   color: #26A91E;
   text-decoration: none;
@@ -8543,12 +8660,11 @@ header {
   background-color: white; }
 .fp-viewing-home .footer-container-wrapper h2 {
   color: white; }
-
-.footer-container-wrapper {
+.fp-viewing-home .footer-container-wrapper .footer-container-wrapper {
   transition: fill-opacity 2s; }
-  .footer-container-wrapper footer {
+  .fp-viewing-home .footer-container-wrapper .footer-container-wrapper footer {
     position: relative; }
-  .footer-container-wrapper .arrow {
+  .fp-viewing-home .footer-container-wrapper .footer-container-wrapper .arrow {
     background-color: white;
     -webkit-clip-path: polygon(50% 25%, 100% 0, 100% 10%, 50% 35%, 0 10%, 0 0);
     clip-path: polygon(50% 25%, 100% 0, 100% 10%, 50% 35%, 0 10%, 0 0);
@@ -8556,33 +8672,63 @@ header {
     height: 75px;
     width: 120px;
     background-color: #979797; }
-  .footer-container-wrapper a {
+  .fp-viewing-home .footer-container-wrapper .footer-container-wrapper a {
     position: absolute;
     margin: 0px auto;
     display: block;
     width: 300px;
     top: 15%;
     left: calc(50% - 150px); }
-    .footer-container-wrapper a:hover {
+    .fp-viewing-home .footer-container-wrapper .footer-container-wrapper a:hover {
       text-decoration: none; }
-  .footer-container-wrapper h2 {
+  .fp-viewing-home .footer-container-wrapper .footer-container-wrapper h2 {
     font-family: "Fanwood Text Italic", Georgia, serif;
     font-size: 36px;
     text-align: center;
     color: #979797; }
-  .footer-container-wrapper.homepage {
+  .fp-viewing-home .footer-container-wrapper .footer-container-wrapper.homepage {
     position: fixed;
     bottom: 0px;
     width: 100%; }
-    .footer-container-wrapper.homepage .container-fluid {
+    .fp-viewing-home .footer-container-wrapper .footer-container-wrapper.homepage .container-fluid {
       padding: 0px; }
-    .footer-container-wrapper.homepage .container-container {
+    .fp-viewing-home .footer-container-wrapper .footer-container-wrapper.homepage .container-container {
       -webkit-filter: blur(5px);
               filter: blur(5px); }
-    .footer-container-wrapper.homepage svg {
+    .fp-viewing-home .footer-container-wrapper .footer-container-wrapper.homepage svg {
       width: 104%;
       margin-left: -2%;
       margin-bottom: -20px; }
+
+body:not(.fp-viewing-home) .footer-container-wrapper {
+  background-color: #444444; }
+  body:not(.fp-viewing-home) .footer-container-wrapper .footer-container {
+    padding: 30px 50px; }
+    body:not(.fp-viewing-home) .footer-container-wrapper .footer-container ul {
+      margin: 0px; }
+      body:not(.fp-viewing-home) .footer-container-wrapper .footer-container ul li {
+        list-style: none;
+        line-height: 1.5em; }
+        body:not(.fp-viewing-home) .footer-container-wrapper .footer-container ul li a {
+          color: #ffffff !important;
+          font-family: "Proxima Nova Light", Arial, sans-serif; }
+      body:not(.fp-viewing-home) .footer-container-wrapper .footer-container ul.hs-menu-children-wrapper {
+        display: none; }
+    body:not(.fp-viewing-home) .footer-container-wrapper .footer-container h4 {
+      color: #ffffff !important;
+      font-family: "Proxima Nova Light", Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.25em; }
+    body:not(.fp-viewing-home) .footer-container-wrapper .footer-container .address {
+      margin-bottom: 20px; }
+    body:not(.fp-viewing-home) .footer-container-wrapper .footer-container i {
+      margin-right: 5px;
+      color: white; }
+    body:not(.fp-viewing-home) .footer-container-wrapper .footer-container .social li {
+      position: relative; }
+    body:not(.fp-viewing-home) .footer-container-wrapper .footer-container .social a {
+      position: absolute;
+      top: calc(50% - 14px); }
 
 @media (max-width: 568px) {
   .footer-container-wrapper {
@@ -8662,7 +8808,6 @@ button[disabled] {
   line-height: 1em;
   margin-bottom: 20px; }
 .homepage:not(.fp-viewing-home) p {
-  font-family: "Fanwood Text", Georgia, serif;
   margin-bottom: 10px;
   color: #585858; }
 .homepage:not(.fp-viewing-home) a p span {
@@ -8782,3 +8927,63 @@ button[disabled] {
     display: block; }
   .homepage .main-copy {
     display: none !important; } }
+.about .body-container {
+  padding-top: 100px; }
+.about .hero-container {
+  width: 100%;
+  padding: 8% 0px; }
+  .about .hero-container h1 {
+    font-size: 64px;
+    text-align: center;
+    line-height: 1em;
+    width: 90%;
+    margin: 0px auto; }
+.about .venn-container {
+  background: #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(187, 187, 187, 0.5);
+  margin: 50px 0px;
+  height: 680px; }
+.about .line-graph {
+  padding: 0px 50px; }
+  .about .line-graph h2 {
+    font-size: 2em; }
+  .about .line-graph img {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table; }
+  .about .line-graph .img-container {
+    box-shadow: 0 2px 2px -2px gray; }
+.about .team {
+  padding: 75px 50px; }
+  .about .team img {
+    margin: 0px auto;
+    display: table; }
+  .about .team h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.67em;
+    line-height: 1.25em; }
+  .about .team .map-group {
+    margin-bottom: 50px; }
+  .about .team h2 {
+    font-size: 2em;
+    font-family: "Proxima Nova Light", Arial, sans-serif;
+    text-align: center;
+    color: #919191; }
+  .about .team .team-images img {
+    width: 182px;
+    height: 182px;
+    border-radius: 2px;
+    margin-bottom: 20px; }
+  .about .team .team-images h4 {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    line-height: 1em;
+    color: #919191; }
+
+@media (max-width: 401px) {
+  .about .hero-container h1 {
+    font-size: 36px; } }
