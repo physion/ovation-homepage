@@ -1,21 +1,19 @@
 body{
-  &.fp-viewing-firstPage, &.products-a {
-    .header-container-wrapper {
-      background-color:transparent;
+  .header-container-wrapper.transparent {
+    background-color:transparent;
 
-      .hs-menu-wrapper {
-        a {
-          color:white !important;
-        }
+    .hs-menu-wrapper {
+      a {
+        color:white !important;
       }
-      .widget-type-logo {
-        g, text {
-          fill:white;
-        }
+    }
+    .widget-type-logo {
+      g, text {
+        fill:white;
       }
-      #overly_open {
-        color:white;
-      }
+    }
+    #overly_open {
+      color:white;
     }
   }
 }
