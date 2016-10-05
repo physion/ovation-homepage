@@ -9150,7 +9150,7 @@ body.products.products-b .ping-pong-container, body.products.products-c .ping-po
 body.products.products-b .cta, body.products.products-c .cta {
   box-shadow: 0px -2px 4px 0px rgba(187, 187, 187, 0.5); }
   body.products.products-b .cta .cta-container, body.products.products-c .cta .cta-container {
-    padding: 80px 200px; }
+    padding: 80px 150px; }
     body.products.products-b .cta .cta-container h1, body.products.products-c .cta .cta-container h1 {
       text-align: center;
       font-size: 48px;
@@ -9167,3 +9167,235 @@ body.products .body-container {
   padding-top: 150px;
   padding-left: 5%;
   padding-right: 5%; }
+
+body.pricing .pricing-header {
+  margin-top: 100px;
+  padding: 90px 0px;
+  text-align: center;
+  color: #979797; }
+  body.pricing .pricing-header h1 {
+    font-size: 64px;
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    line-height: 1.5em; }
+body.pricing .white-tabs {
+  text-align: center;
+  color: #979797;
+  margin: 0 auto !important;
+  float: none !important;
+  max-width: 625px; }
+  body.pricing .white-tabs .tab {
+    background-color: #F0F0F0;
+    padding: 5px 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px; }
+    body.pricing .white-tabs .tab h1 {
+      font-size: 24px; }
+    body.pricing .white-tabs .tab.active {
+      background-color: #f8f8f8; }
+      body.pricing .white-tabs .tab.active h1 {
+        color: #3C3C3C; }
+body.pricing .pricing-main {
+  background-color: #f8f8f8;
+  padding: 45px 0;
+  box-shadow: 0px 2px 4px 0px rgba(187, 187, 187, 0.5); }
+  body.pricing .pricing-main .pricing-boxes-container {
+    margin: 0 auto !important;
+    float: none !important;
+    max-width: 700px; }
+    body.pricing .pricing-main .pricing-boxes-container .pricing-box {
+      max-width: 220px !important;
+      margin-right: 20px;
+      background-color: #fff;
+      margin: 0 auto 20px !important;
+      float: none !important;
+      /* Rectangle 3: */
+      box-shadow: 0px 2px 4px 0px rgba(187, 187, 187, 0.5);
+      border-radius: 2px; }
+      body.pricing .pricing-main .pricing-boxes-container .pricing-box * > :last-child {
+        margin-bottom: 0 !important;
+        margin-right: 0 !important; }
+      body.pricing .pricing-main .pricing-boxes-container .pricing-box .pricing-column-body {
+        padding: 20px 10px 40px; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .pricing-column-body hr {
+          width: 85%; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .pricing-column-body p, body.pricing .pricing-main .pricing-boxes-container .pricing-box .pricing-column-body ul {
+          color: #979797;
+          font-family: "Fanwood Text", Georgia, serif; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .pricing-column-body .button, body.pricing .pricing-main .pricing-boxes-container .pricing-box .pricing-column-body .orange.hs-cta-wrapper a, .orange.hs-cta-wrapper body.pricing .pricing-main .pricing-boxes-container .pricing-box .pricing-column-body a, body.pricing .pricing-main .pricing-boxes-container .pricing-box .pricing-column-body .green.hs-cta-wrapper a, .green.hs-cta-wrapper body.pricing .pricing-main .pricing-boxes-container .pricing-box .pricing-column-body a {
+          display: table;
+          margin: 0px auto; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .pricing-column-body ul li {
+          line-height: 1.5em; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .pricing-column-body p {
+          text-align: center;
+          color: #979797;
+          margin-bottom: 20px; }
+      body.pricing .pricing-main .pricing-boxes-container .pricing-box .price-column-header {
+        padding: 20px 10px 10px;
+        color: white;
+        height: 155px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .price-column-header h1, body.pricing .pricing-main .pricing-boxes-container .pricing-box .price-column-header h2, body.pricing .pricing-main .pricing-boxes-container .pricing-box .price-column-header h3 {
+          color: white !important;
+          text-align: center; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .price-column-header h2 {
+          font-size: 24px;
+          font-family: "Proxima Nova Semibold", Arial, sans-serif;
+          margin-bottom: 10px; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .price-column-header h1 {
+          font-size: 36px; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .price-column-header h3 {
+          font-size: 1em; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .price-column-header.red {
+          background: #CC5099; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .price-column-header.orange {
+          background: #FFA45B; }
+        body.pricing .pricing-main .pricing-boxes-container .pricing-box .price-column-header.green {
+          background: #51BA4B; }
+  body.pricing .pricing-main .osl-add-ons {
+    margin-top: 60px; }
+    body.pricing .pricing-main .osl-add-ons h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 700;
+      color: #767676; }
+    body.pricing .pricing-main .osl-add-ons .add-on-box {
+      background-color: #fff;
+      margin-bottom: 40px;
+      height: 335px;
+      box-shadow: 0px 2px 4px 0px rgba(187, 187, 187, 0.5);
+      border-radius: 2px;
+      padding: 20px 15px 30px; }
+      body.pricing .pricing-main .osl-add-ons .add-on-box.orange {
+        border: 1px solid #FFA45B; }
+      body.pricing .pricing-main .osl-add-ons .add-on-box.red {
+        border: 1px solid #C02580; }
+      body.pricing .pricing-main .osl-add-ons .add-on-box h1, body.pricing .pricing-main .osl-add-ons .add-on-box h2, body.pricing .pricing-main .osl-add-ons .add-on-box h3 {
+        color: #717171 !important;
+        text-align: center; }
+      body.pricing .pricing-main .osl-add-ons .add-on-box h2 {
+        font-size: 24px;
+        font-family: "Proxima Nova Semibold", Arial, sans-serif;
+        margin-bottom: 10px; }
+      body.pricing .pricing-main .osl-add-ons .add-on-box h1 {
+        font-size: 36px;
+        margin-bottom: 5px; }
+      body.pricing .pricing-main .osl-add-ons .add-on-box h3 {
+        font-size: 1em; }
+body.pricing .osl-pricing-main {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(187, 187, 187, 0.5);
+  border-radius: 2px;
+  padding: 20px; }
+  body.pricing .osl-pricing-main h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #5f5f5f;
+    line-height: 1.2em;
+    font-family: "Proxima Nova Semibold", Arial, sans-serif;
+    margin: 20px 0 40px; }
+  body.pricing .osl-pricing-main .button, body.pricing .osl-pricing-main .orange.hs-cta-wrapper a, .orange.hs-cta-wrapper body.pricing .osl-pricing-main a, body.pricing .osl-pricing-main .green.hs-cta-wrapper a, .green.hs-cta-wrapper body.pricing .osl-pricing-main a {
+    margin: 20px auto;
+    display: table; }
+  body.pricing .osl-pricing-main .osl-sample-price-block {
+    height: 235px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 2px; }
+    body.pricing .osl-pricing-main .osl-sample-price-block img {
+      width: 50%;
+      margin: 0 auto 40px !important;
+      float: none;
+      display: block; }
+    body.pricing .osl-pricing-main .osl-sample-price-block h1, body.pricing .osl-pricing-main .osl-sample-price-block h2 {
+      text-align: center;
+      color: #3F3F3F; }
+    body.pricing .osl-pricing-main .osl-sample-price-block h1 {
+      font-size: 36px;
+      margin: 0px 0px; }
+    body.pricing .osl-pricing-main .osl-sample-price-block h2 {
+      font-size: 24px;
+      margin: 5px 0px; }
+body.pricing .footnote-wrapper {
+  padding: 0px 40px 40px; }
+body.pricing .footnote {
+  font-family: "Fanwood Italic", Georgia, serif !important;
+  color: #858585;
+  text-align: center; }
+body.pricing .not-to-mention {
+  margin: 160px 0; }
+  body.pricing .not-to-mention h2 {
+    color: #58585b; }
+body.pricing .pricing-bracket p {
+  font-size: 435px !important;
+  margin: 20px 0 !important;
+  line-height: .8em !important; }
+body.pricing .feature-list p {
+  font-size: 20px;
+  font-family: "Proxima Nova Regular", Arial, sans-serif; }
+body.pricing .testimonial {
+  padding: 20px 15%;
+  margin: 0px auto;
+  display: table;
+  /*
+  span.quote {
+    color:#CC5099;
+    font-size:144px;
+    display:block;
+    float:left;
+    width:10%;
+  }
+  */ }
+  body.pricing .testimonial hr {
+    width: 85%; }
+  body.pricing .testimonial p {
+    margin: 0.25em 0;
+    padding: 0.35em 40px; }
+  body.pricing .testimonial p.main-copy {
+    line-height: 1.45;
+    position: relative;
+    color: #383838; }
+    body.pricing .testimonial p.main-copy:before {
+      display: block;
+      padding-left: 10px;
+      content: "\201C";
+      font-size: 80px;
+      position: absolute;
+      left: -20px;
+      top: -20px;
+      color: #CC5099; }
+    body.pricing .testimonial p.main-copy:after {
+      display: block;
+      padding-right: 10px;
+      content: "\201D";
+      font-size: 80px;
+      position: absolute;
+      right: -15px;
+      bottom: -60px;
+      color: #CC5099; }
+body.pricing .pricing-faqs {
+  box-shadow: 0px -2px 4px 0px rgba(187, 187, 187, 0.5); }
+  body.pricing .pricing-faqs h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    color: #979797;
+    margin: 50px 0; }
+  body.pricing .pricing-faqs .faq-container {
+    max-width: 940px;
+    float: none !important;
+    margin: 0 auto 40px !important;
+    padding: 0 20px; }
+    body.pricing .pricing-faqs .faq-container h2 {
+      font-size: 36px;
+      font-weight: 100;
+      color: #979797;
+      margin: 0;
+      font-family: "Proxima Nova Light", Arial, sans-serif; }
+    body.pricing .pricing-faqs .faq-container p {
+      line-height: 1.5em;
+      margin: 14px 0; }

@@ -1,0 +1,302 @@
+body {
+  &.pricing {
+    .pricing-header {
+      margin-top: 100px;
+      padding: 90px 0px;
+      text-align: center;
+      color: #979797;
+      h1 {
+        font-size:64px;
+        font-family:$proxima-nova-regular;
+        line-height:1.5em;
+      }
+    }
+    .white-tabs {
+        text-align: center;
+        color: #979797;
+        margin: 0 auto !important;
+        float: none !important;
+        max-width: 625px;
+        .tab {
+          background-color: #F0F0F0;
+          padding:5px 0px;
+          border-top-left-radius: 2px;
+          border-top-right-radius: 2px;
+          h1 {
+            font-size:24px;
+          }
+          &.active {
+            background-color:#f8f8f8;
+            h1 {
+              color: #3C3C3C;
+            }
+          }
+        }
+
+    }
+    .pricing-main {
+      background-color:#f8f8f8;
+      padding: 45px 0;
+      box-shadow: 0px 2px 4px 0px rgba(187,187,187,0.50);
+      .pricing-boxes-container {
+        margin: 0 auto !important;
+        float: none !important;
+        max-width: 700px;
+        .pricing-box {
+          max-width: 220px !important;
+          margin-right: 20px;
+          background-color: #fff;
+          margin: 0 auto 20px !important;
+          float: none !important;
+          // height: 750px;
+          * > :last-child { margin-bottom: 0 !important; margin-right: 0 !important; }
+          /* Rectangle 3: */
+          box-shadow: 0px 2px 4px 0px rgba(187,187,187,0.50);
+          border-radius: 2px;
+          .pricing-column-body {
+            padding: 20px 10px 40px;
+            hr {
+              width:85%;
+            }
+            p, ul {
+              color: #979797;
+              font-family: $fanwood-text;
+            }
+            .button {
+              display:table;
+              margin:0px auto;
+            }
+            ul li {
+              line-height:1.5em;
+            }
+            p {
+              text-align: center;
+              color:#979797;
+              margin-bottom: 20px;
+            }
+
+          }
+
+          .price-column-header {
+            padding: 20px 10px 10px;
+            color: white;
+            height: 155px;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            h1, h2, h3 {
+              color:white !important;
+              text-align:center;
+            }
+            h2 {
+              font-size:24px;
+              font-family:$proxima-nova-semibold;
+              margin-bottom:10px;
+            }
+            h1 {
+              font-size:36px;
+            }
+            h3 {
+              font-size:1em;
+            }
+            &.red {
+              background: #CC5099;
+            }
+            &.orange {
+              background: #FFA45B;
+            }
+            &.green {
+              background: #51BA4B;
+            }
+          }
+        }
+      }
+      .osl-add-ons {
+        margin-top: 60px;
+        h1 {
+          font-size: 36px;
+          text-align: center;
+          margin-bottom: 40px;
+          font-weight: 700;
+          color: #767676;
+        }
+        .add-on-box {
+          background-color: #fff;
+          margin-bottom: 40px;
+          height: 335px;
+
+          box-shadow: 0px 2px 4px 0px rgba(187,187,187,0.50);
+          border-radius: 2px;
+          padding:20px 15px 30px;
+          &.orange {
+            border: 1px solid #FFA45B;
+          }
+          &.red {
+            border: 1px solid #C02580;
+          }
+          h1, h2, h3 {
+            color:#717171 !important;
+            text-align:center;
+          }
+          h2 {
+            font-size:24px;
+            font-family:$proxima-nova-semibold;
+            margin-bottom:10px;
+          }
+          h1 {
+            font-size:36px;
+            margin-bottom: 5px;
+          }
+          h3 {
+            font-size:1em;
+          }
+        }
+      }
+    }
+    .osl-pricing-main {
+      background: #FFFFFF;
+      box-shadow: 0px 2px 4px 0px rgba(187,187,187,0.50);
+      border-radius: 2px;
+      padding:20px;
+      h1 {
+          text-align: center;
+          font-size: 36px;
+          font-weight: 700;
+          color: #5f5f5f;
+          line-height: 1.2em;
+          font-family:$proxima-nova-semibold;
+          margin: 20px 0 40px;
+      }
+      .button {
+        margin: 20px auto;
+        display:table;
+        //text-align:center;
+      }
+      .osl-sample-price-block {
+          height: 235px;
+          background-color: #f8f8f8;
+          padding: 20px;
+          margin-bottom: 40px;
+          border-radius:2px;
+          img {
+            width: 50%;
+            margin: 0 auto 40px !important;
+            float: none;
+            display: block;
+          }
+          h1, h2 {
+            text-align: center;
+            color: #3F3F3F;
+          }
+          h1 {
+            font-size: 36px;
+            margin:0px 0px;
+          }
+          h2 {
+            font-size: 24px;
+            margin:5px 0px;
+          }
+      }
+    }
+    .footnote-wrapper {
+      padding:0px 40px 40px;
+    }
+    .footnote {
+      font-family:$fanwood-italic !important;
+      color: #858585;
+      text-align:center;
+    }
+    .not-to-mention {
+        margin: 160px 0;
+        h2 {
+          color: #58585b;
+        }
+    }
+    .pricing-bracket p {
+        font-size: 435px !important;
+        margin: 20px 0 !important;
+        line-height: .8em !important;
+    }
+    .feature-list {
+      p {
+        font-size:20px;
+        font-family: $proxima-nova-regular;
+      }
+    }
+    .testimonial {
+      padding:20px 15%;
+      margin:0px auto;
+      display:table;
+
+      hr {
+        width:85%;
+      }
+      p {
+        margin: 0.25em 0;
+        padding: 0.35em 40px;
+      }
+      p.main-copy {
+        //width: 500px;
+
+        line-height: 1.45;
+        position: relative;
+        color: #383838;
+        &:before {
+          display: block;
+          padding-left: 10px;
+          content: "\201C";
+          font-size: 80px;
+          position: absolute;
+          left: -20px;
+          top: -20px;
+          color:#CC5099;
+        }
+        &:after {
+          display: block;
+          padding-right: 10px;
+          content: "\201D";
+          font-size: 80px;
+          position: absolute;
+          right: -15px;
+          bottom: -60px;
+          color:#CC5099;
+        }
+      }
+      /*
+      span.quote {
+        color:#CC5099;
+        font-size:144px;
+        display:block;
+        float:left;
+        width:10%;
+      }
+      */
+    }
+    .pricing-faqs {
+      box-shadow: 0px -2px 4px 0px rgba(187,187,187,0.50);
+      h1 {
+          text-align: center;
+          font-size: 48px;
+          font-weight: 400;
+          color: #979797;
+          margin: 50px 0;
+      }
+      .faq-container {
+        max-width: 940px;
+        float: none !important;
+        margin: 0 auto 40px !important;
+        padding: 0 20px;
+        h2 {
+          font-size: 36px;
+          font-weight: 100;
+          color: #979797;
+          margin: 0;
+          font-family:$proxima-nova-light;
+        }
+        p {
+          line-height: 1.5em;
+          margin: 14px 0;
+        }
+      }
+    }
+  }
+}
