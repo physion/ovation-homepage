@@ -9,6 +9,7 @@
     <meta name="author" content="{{ meta_author }}">
     <meta name="description" content="{{ page_meta.meta_description }}">
     <meta name="generator" content="HubSpot">
+
     <title>{{ page_meta.html_title }}</title>
     {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
 
@@ -16,22 +17,22 @@
     {{ standard_header_includes }}
     {% style include_default_custom_css="true" %}
 
-    <link href="../../page/css/style.min.css" rel="stylesheet">
-
+    <link href="{{ get_public_template_url("custom/page/css/style.min.css") }}" rel="stylesheet">
 
 </head>
 <body class="site-page one-column about" >
+
   <div class="header-container-wrapper">
     <div class="header-container container-fluid">
       <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
         <div class="row-fluid ">
           <div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
             {% include 'custom/system/global/header.html' %}
-          </div><!--end widget-span -->
-        </div><!--end row-->
-      </div><!--end row-wrapper -->
-    </div><!--end header -->
-  </div><!--end header wrapper -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="body-container-wrapper">
     <div class="body-container container-fluid">
       <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
@@ -142,15 +143,14 @@
         <div class="row-fluid ">
           <div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
               {% include 'custom/system/global/footer.html' %}
-          </div><!--end widget-span -->
-        </div><!--end row-->
-      </div><!--end row-wrapper -->
-    </div><!--end footer -->
-  </div><!--end footer wrapper -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   {{ standard_footer_includes }}
-
 
   <script src="../../page/js/jquery.min.js"></script>
   <script src="../../page/js/jquery.overly.js"></script>
