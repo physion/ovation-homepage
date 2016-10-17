@@ -34,15 +34,15 @@
   </div><!--end header wrapper -->
   <div class="body-container-wrapper">
     <div class="body-container container-fluid">
-      <div class="row hero">
+      <div class="row hero not-a">
         <div class="nav-elements">
-          <a href="http://www.projectpageone.com"><div class="arrow left"></div></a>
-          <a href="http://www.projectpageone.com"><div class="arrow right"></div></a>
+          <a href="https://www.ovation.io/platform"><div class="arrow right"></div></a>
           <ul class="products-nav">
-            <li class="active"><a href="#research">Research</a></li>
-            <li><a href="#research">Main</a></li>
-            <li><a href="#research">Service Lab</a></li>
+            <li class="active"><a href="">Research</a></li>
+            <li><a href="https://www.ovation.io/platform">Platform</a></li>
+            <li><a href="https://www.ovation.io/service-lab">Service Lab</a></li>
         </div>
+        <h1 style="font-size:50px;color:white;text-align:center;padding-bottom:20px;">Ovation Research</h1>
         {% linked_image "module_about_4" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/or-graphic.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
       </div>
       <div class="row video-container">
@@ -53,7 +53,7 @@
         </div>
         <div class="row">
           <div class="video">
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/krq58f4uow?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/jkck3d021f?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
             <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
           </div>
@@ -62,11 +62,35 @@
       <div class="ping-pong row-fluid">
         <div class="ping-pong-container">
           <div class="span6">
-            {% linked_image "module_about_4" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% header "module_header-1" header_tag='h1', overrideable=True, wrapping_html='', value='Tell the story of your data, or jump head first into someone else’s', label='Main Headline' %}
+            <p class="main-copy">{% text "module_3" class="homepage-copy" value='Ovation doesn’t just dump your data into folder or buckets. With the information collected from activities, metadata, and file versions, Ovation present you, your team, or future collaborators with a complete story of your scientific process as told by the data you’ve produced. You won’t find anything this powerful and useful anywhere else.', label='One Line of Text', overrideable=True, wrapping_html='' %}</p>
           </div>
           <div class="span6">
-            {% header "module_about_1" header_tag='h1', overrideable=True, wrapping_html='', value='Tell the story of your data, or jump head first into someone else’s', label='Main Headline' %}
+            {% linked_image "module_image-1" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+          </div>
+
+        </div>
+      </div>
+      <div class="ping-pong row-fluid">
+        <div class="ping-pong-container">
+          <div class="span6">
+            {% linked_image "module_header-1" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+          </div>
+          <div class="span6">
+            {% header "module_image-2" header_tag='h1', overrideable=True, wrapping_html='', value='Tell the story of your data, or jump head first into someone else’s', label='Main Headline' %}
             <p class="main-copy">{% text "module_3" class="homepage-copy" value='Ovation doesn’t just dump your data into folder or buckets. With the information collected from activities, metadata, and file versions, Ovation present you, your team, or future collaborators with a complete story of your scientific process as told by the data you’ve produced. You won’t find anything this powerful and useful anywhere else.', label='One Line of Text', overrideable=True, wrapping_html='' %}</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="ping-pong row-fluid">
+        <div class="ping-pong-container">
+          <div class="span6">
+            {% header "module_header-3" header_tag='h1', overrideable=True, wrapping_html='', value='Tell the story of your data, or jump head first into someone else’s', label='Main Headline' %}
+            <p class="main-copy">{% text "module_3" class="homepage-copy" value='Ovation doesn’t just dump your data into folder or buckets. With the information collected from activities, metadata, and file versions, Ovation present you, your team, or future collaborators with a complete story of your scientific process as told by the data you’ve produced. You won’t find anything this powerful and useful anywhere else.', label='One Line of Text', overrideable=True, wrapping_html='' %}</p>
+          </div>
+          <div class="span6">
+            {% linked_image "module_image-3" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
           </div>
         </div>
       </div>

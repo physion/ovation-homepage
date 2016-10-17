@@ -9107,10 +9107,11 @@ button[disabled] {
     font-size: 36px; } }
 body.products #dlgeneric_hype_container {
   display: none; }
-body.products .hero img {
+body.products .hero.not-a img {
   width: 800px;
-  margin: 0px auto; }
-body.products .hero h1 {
+  margin: 0px auto;
+  display: table; }
+body.products .hero.not-a h1 {
   line-height: 1.25em; }
 body.products .products-nav {
   bottom: 20px;

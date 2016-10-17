@@ -3,11 +3,11 @@ body {
     #dlgeneric_hype_container {
       display:none;
     }
-    .hero {
+    .hero.not-a {
       img {
         width:800px;
         margin:0px auto;
-        //display:table;
+        display:table;
       }
       h1 {
         line-height:1.25em;
