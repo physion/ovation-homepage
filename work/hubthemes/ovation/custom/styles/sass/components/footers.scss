@@ -82,10 +82,31 @@ body:not(.homepage) {
           a {
             color:#ffffff !important;
             font-family:$proxima-nova-light;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          &.hs-item-has-children {
+            margin-left: -10px;
+            &.open {
+
+              .hs-menu-children-wrapper {
+                max-height: 200px;
+                transition: max-height 0.5s ease-in;
+              }
+            }
+            & > a:before {
+              font-family: FontAwesome;
+              content: '\F0DA';
+              margin-right:5px;
+            }
           }
         }
         &.hs-menu-children-wrapper {
-          display:none;
+          padding-left:20px;
+          max-height: 0;
+          transition: max-height 0.5s ease-out;
+          overflow: hidden;
         }
       }
       h4 {

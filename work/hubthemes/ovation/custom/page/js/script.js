@@ -1,5 +1,9 @@
 
 $(document).ready(function() {
+  $('.hs-item-has-children').click(function() {
+    $(this).toggleClass( "open" );
+  });
+
   $('.flex-menu').Overly_menu({
     'speed': 0,
     'color': '#f8f8f8',
