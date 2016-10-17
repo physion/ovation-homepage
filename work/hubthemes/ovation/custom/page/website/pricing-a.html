@@ -17,6 +17,7 @@
     <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %} {{ standard_header_includes }} {% style include_default_custom_css="true" %}
 
     <link href="{{ get_public_template_url("custom/page/css/style.min.css") }}" rel="stylesheet">
+
 </head>
 
 <body class="pricing-a pricing" style="">
@@ -63,7 +64,7 @@
                                 <div class="span6 widget-span widget-type-raw_html " style="" data-widget-type="raw_html" data-x="0" data-w="6">
                                     <div class="cell-wrapper layout-widget-wrapper tab">
                                         {% widget_block raw_html "module_146645742389236814" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', wrapping_html='', label='Custom HTML' %} {% widget_attribute "value" %}
-                                        <h1>Service Lab</h1>{% end_widget_attribute %} {% end_widget_block %}
+                                        <a href="#"><h1>Service Lab</h1></a>{% end_widget_attribute %} {% end_widget_block %}
                                     </div>
                                     <!--end layout-widget-wrapper -->
                                 </div>
@@ -192,7 +193,7 @@
                                                                 <div class="row-fluid ">
                                                                     <div class="span12 widget-span widget-type-rich_text pricing-column-body" style="" data-widget-type="rich_text" data-x="0" data-w="12">
                                                                       <div class="cell-wrapper layout-widget-wrapper">
-                                                                          {% widget_block rich_text "module_146645454680613650" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', wrapping_html='', label='Rich Text' %} {% widget_attribute "html" %}
+                                                                          {% widget_block rich_text "module_146645454680613650-2" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', wrapping_html='', label='Rich Text' %} {% widget_attribute "html" %}
                                                                           <p class="p1">Great for labs, research teams, and companies</p>
                                                                           <!--HubSpot Call-to-Action Code -->
                                                                           <span class="hs-cta-wrapper orange button" id="hs-cta-wrapper-b0ed9e1c-b542-46e0-9404-3dd3bcf0cdab">
@@ -268,7 +269,7 @@
                                                                 <div class="row-fluid ">
                                                                     <div class="span12 widget-span widget-type-rich_text pricing-column-body" style="" data-widget-type="rich_text" data-x="0" data-w="12">
                                                                       <div class="cell-wrapper layout-widget-wrapper">
-                                                                          {% widget_block rich_text "module_146645454680613650" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', wrapping_html='', label='Rich Text' %} {% widget_attribute "html" %}
+                                                                          {% widget_block rich_text "module_146645454680613650-3" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', wrapping_html='', label='Rich Text' %} {% widget_attribute "html" %}
                                                                           <p class="p1">Optimized for entire companies and institutions</p>
                                                                           <!--HubSpot Call-to-Action Code -->
                                                                           <span class="hs-cta-wrapper button orange" id="hs-cta-wrapper-ba07097c-28da-414c-a51b-e0eb000c3e7e">
@@ -456,7 +457,7 @@
                         {% linked_image "module_about_4" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/pincus.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
                       </div>
                       <div class="span7 widget-span widget-type-header " style="" data-widget-type="header" data-x="0" data-w="12">
-                        {% widget_block rich_text "module_146854075475612722" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', wrapping_html='', label='Rich Text' %} {% widget_attribute "html" %}
+                        {% widget_block rich_text "module_testimonial" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', wrapping_html='', label='Rich Text' %} {% widget_attribute "html" %}
                         <p class="main-copy">Provenance is exactly the kind of feature I've been craving! The simple visual workflow that leads from the initial sample through all the experiments and steps of analysis and ends with the manuscript figure is what's been sorely lacking. I am just starting a brand new project with a collaborator, and will begin using Ovation to track all the twists and turns.”</p>
                         <hr />
                         <p><em><strong>David Pincus, Fellow, Whitehead Institute</strong></em></p>
@@ -503,7 +504,7 @@
                                                 </div>
                                                 <!--end layout-widget-wrapper -->
                                                 <div class="cell-wrapper layout-widget-wrapper">
-                                                    {% widget_block rich_text "module_146645466834219981" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
+                                                    {% widget_block rich_text "module_146645466834219981-2" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
                                                     <h2>What is a user?</h2>
                                                     <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
                                                     end_widget_attribute %} {% end_widget_block %}
@@ -513,14 +514,14 @@
                                             <!--end widget-span -->
                                             <div class="span6 widget-span widget-type-rich_text " style="" data-widget-type="rich_text" data-x="6" data-w="6">
                                               <div class="cell-wrapper layout-widget-wrapper">
-                                                  {% widget_block rich_text "module_146645466834219981" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
+                                                  {% widget_block rich_text "module_146645466834219981-3" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
                                                   <h2>What is a user?</h2>
                                                   <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
                                                   end_widget_attribute %} {% end_widget_block %}
                                               </div>
                                               <!--end layout-widget-wrapper -->
                                               <div class="cell-wrapper layout-widget-wrapper">
-                                                  {% widget_block rich_text "module_146645466834219981" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
+                                                  {% widget_block rich_text "module_146645466834219981-4" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
                                                   <h2>What is a user?</h2>
                                                   <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
                                                   end_widget_attribute %} {% end_widget_block %}
@@ -566,10 +567,16 @@
 
     {{ standard_footer_includes }}
 
-    <script src="../../page/js/jquery.min.js"></script>
-    <script src="../../page/js/jquery.overly.js"></script>
-    <script src="../../page/js/jquery.fullPage.min.js"></script>
-    <script src="../../page/js/script.min.js"></script>
+    <script>
+    if (typeof jQuery == 'undefined') {
+      document.write(unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'%3E%3C/script%3E"));
+    }
+  </script>
+  <script src="{{ get_public_template_url("custom/page/js/jquery.overly.js") }}"></script>
+  <script src="{{ get_public_template_url("custom/page/js/jquery.fullPage.min.js") }}"></script>
+  <script src="{{ get_public_template_url("custom/page/js/script.min.js") }}"></script>
+  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+
 </body>
 
 </html>

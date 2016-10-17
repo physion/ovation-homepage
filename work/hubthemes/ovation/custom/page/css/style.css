@@ -9232,6 +9232,8 @@ body.pricing .white-tabs {
     padding: 5px 0px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px; }
+    body.pricing .white-tabs .tab a:hover {
+      text-decoration: none; }
     body.pricing .white-tabs .tab h1 {
       font-size: 24px; }
     body.pricing .white-tabs .tab.active {
@@ -9444,6 +9446,35 @@ body.pricing .pricing-faqs {
       line-height: 1.5em;
       margin: 14px 0; }
 
+@media (max-width: 401px) {
+  body.pricing .pricing-faqs h1 {
+    font-size: 36px; }
+  body.pricing .osl-add-ons {
+    padding: 0px 10px; }
+  body.pricing .pricing-header h1 {
+    font-size: 32px; }
+  body.pricing .white-tabs {
+    margin: 0 auto !important;
+    float: none !important;
+    max-width: 350px; }
+    body.pricing .white-tabs .span6 {
+      float: left !important; }
+    body.pricing .white-tabs .tab {
+      background-color: #F0F0F0;
+      padding: 5px 0px;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      width: 175px;
+      display: inline-block;
+      float: left; }
+      body.pricing .white-tabs .tab a:hover {
+        text-decoration: none; }
+      body.pricing .white-tabs .tab h1 {
+        font-size: 24px; }
+      body.pricing .white-tabs .tab.active {
+        background-color: #f8f8f8; }
+        body.pricing .white-tabs .tab.active h1 {
+          color: #3C3C3C; } }
 body.enterprise .body-container-wrapper {
       /*
       padding-top:150px;
