@@ -31,20 +31,25 @@ $(document).ready(function() {
           $('body .header-container-wrapper').removeClass('transparent');
         }
         if (anchorLink == 1) {
+          $(".arrow").show();
           $("footer h2").html('Collaboration');
           $("footer #footer-nav-link").attr("href", "#collaboration");
         } else if (anchorLink == 2) {
+          $(".arrow").show();
           $("footer h2").html('Sample Tracking');
           $("footer #footer-nav-link").attr("href", "#sample-tracking");
         } else if (anchorLink == 3) {
+          $(".arrow").show();
           $("footer h2").html('Data Management');
           $("footer #footer-nav-link").attr("href", "#data-management");
         } else if (anchorLink == 4) {
+          $(".arrow").show();
           $("footer h2").html('Enterprise');
           $("footer #footer-nav-link").attr("href", "#enterprise");
         } else if (anchorLink == 5) {
           $("footer h2").html('Home');
           $("footer #footer-nav-link").attr("href", "#home");
+          $(".arrow").hide();
         }
       },
       afterRender: function(index){
@@ -54,29 +59,27 @@ $(document).ready(function() {
       },
   });
 
-  function headlineRotate() {
-    setTimeout(function(){
-      var listOne = $('#list-1').html();
-      var listTwo = $('#list-2').html();
-      var listThree = $('#list-3').html();
-      var listFour = $('#list-4').html();
-
-      $('#cycle-list li').fadeOut('slow', function() {
-        $('#list-4').html(listThree);
-        $('#list-3').html(listTwo);
-        $('#list-2').html(listOne);
-        $('#list-1').html(listFour);
-      });
+  //function headlineRotate() {
+  array = ["<a href='#collaboration'>Collaboration</a>","<a href='#sample-tracking'>Sample Tracking</a>","<a href='#data-management'>Data Management</a>","<a href='#enterprise'>Enterprise</a>"];
 
 
 
-      $('#cycle-list li').fadeIn('slow');
+    var curNewsIndex = -1;
 
-      return headlineRotate();
+    var intervalID = setInterval(function() {
+        ++curNewsIndex;
+        if (curNewsIndex >= array.length) {
+            curNewsIndex = 0;
+        }
+
+        $('#change').fadeOut('slow', function() {
+            $('#change').html(array[curNewsIndex]);
+        });
+
+        $('#change').fadeIn('slow');
+
     }, 5000);
-  }
 
-  headlineRotate()
 
   var inView = false;
 

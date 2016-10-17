@@ -71,31 +71,9 @@ body{
       padding:30px 0px;
       border-bottom: 1px solid #979797;
       &.hs-item-has-children {
-        //margin-left: -10px;
-        &.open {
+      }
+    }
 
-          .hs-menu-children-wrapper {
-            max-height: 200px;
-            transition: max-height 0.5s ease-in;
-          }
-        }
-        & > a:before {
-          font-family: FontAwesome;
-          content: '\F0DA';
-          margin-right:5px;
-        }
-      }
-    }
-    .hs-menu-children-wrapper {
-      padding-top:20px;
-      padding-left:20px;
-      max-height: 0;
-      transition: max-height 0.5s ease-out;
-      overflow: hidden;
-      li {
-        border: none !important;
-      }
-    }
   }
   .cta-container {
     text-align:center;

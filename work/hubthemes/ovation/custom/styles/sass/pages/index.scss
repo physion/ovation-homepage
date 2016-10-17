@@ -55,7 +55,7 @@
 
   &:not(.fp-viewing-home) {
     .main-container {
-      padding-top: 150px;
+      padding-top: 225px;
       .left-column-image {
         img {
           width:100%;
@@ -101,6 +101,19 @@
       color:#fff !important;
       font-family: $proxima-nova-light !important;
       line-height: 1.5em !important;
+      font-size:60px;
+      text-align:center;
+      margin:100px 0px;
+      span {
+        border-bottom:3px solid #fff;
+        a {
+          color:#fff;
+          &:hover {
+            color:$main-green;
+            text-decoration:none;
+          }
+        }
+      }
     }
 
     .main-wrapper {
