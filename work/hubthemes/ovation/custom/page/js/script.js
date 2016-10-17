@@ -7,7 +7,7 @@ $(document).ready(function() {
   $('.flex-menu').Overly_menu({
     'speed': 0,
     'color': '#f8f8f8',
-    'opacity': 0.8
+    'opacity': 0.9
   });
 
 
@@ -38,14 +38,18 @@ $(document).ready(function() {
           $(".arrow").show();
           $("footer h2").html('Sample Tracking');
           $("footer #footer-nav-link").attr("href", "#sample-tracking");
+          $('img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/new-website-assets/collaboration-anim.gif');
         } else if (anchorLink == 3) {
           $(".arrow").show();
           $("footer h2").html('Data Management');
           $("footer #footer-nav-link").attr("href", "#data-management");
+          $('img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/new-website-assets/workflow-anim.gif');
         } else if (anchorLink == 4) {
+          http://cdn2.hubspot.net/hubfs/730505/new-website-assets/provenance-anim.gif
           $(".arrow").show();
           $("footer h2").html('Enterprise');
           $("footer #footer-nav-link").attr("href", "#enterprise");
+          $('img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/new-website-assets/provenance-anim.gif');
         } else if (anchorLink == 5) {
           $("footer h2").html('Home');
           $("footer #footer-nav-link").attr("href", "#home");

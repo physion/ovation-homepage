@@ -212,27 +212,29 @@ body {
 }
 
 @media (max-width: 768px) {
-  video {
-    display:none;
-  }
-  .enterprise-header {
-    background-image: url('http://cdn2.hubspot.net/hubfs/730505/new-website-assets/enterprise-device-bg.png');
-    background-size:auto 100%;
-    z-index:-2;
-    .header-header {
-      h1 {
-        font-size: 72px;
-      }
-      h2 {
-        font-size: 48px;
-      }
+  .enterprise {
+    video {
+      display:none;
     }
-    .header-copy {
-      padding: 40px 50px;
-    }
+    .enterprise-header {
+      background-image: url('http://cdn2.hubspot.net/hubfs/730505/new-website-assets/enterprise-device-bg.png');
+      background-size:auto 100%;
+      z-index:-2;
+      .header-header {
+        h1 {
+          font-size: 72px;
+        }
+        h2 {
+          font-size: 48px;
+        }
+      }
+      .header-copy {
+        padding: 40px 50px;
+      }
 
-  }
-  .features {
-    padding: 50px 50px;
+    }
+    .features {
+      padding: 50px 50px;
+    }
   }
 }

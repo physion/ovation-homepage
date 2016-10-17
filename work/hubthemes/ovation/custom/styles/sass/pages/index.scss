@@ -1,5 +1,6 @@
 .homepage {
   &.fp-viewing-home {
+    .body-container {
     #fp-nav {
       ul {
         li {
@@ -54,8 +55,9 @@
   }
 
   &:not(.fp-viewing-home) {
+    .body-container {
     .main-container {
-      padding-top: 225px;
+      padding-top: 125px;
       .left-column-image {
         img {
           width:100%;
@@ -77,10 +79,12 @@
       color: $main-green !important;
     }
   }
+  }
 
 
 
   &.fp-viewing-home {
+    .body-container {
     ul {
       li {
         .fp-tooltip {
@@ -114,6 +118,7 @@
           }
         }
       }
+    }
     }
 
     .main-wrapper {
@@ -189,6 +194,7 @@
       display: table;
     }
   }
+  }
 
 }
 
@@ -202,11 +208,13 @@
 }
 
 @media (max-width: 768px) and  (min-width:401px) {
+
   .left-column-image {
     display:none !important;
   }
   .homepage {
     :not(.fp-viewing-home) {
+      .body-container {
       h1, a {
         text-align:center;
       }
@@ -215,6 +223,7 @@
         margin:0px auto;
         display:table;
       }
+    }
     }
     &.fp-viewing-collaboration, &.fp-viewing-data-management {
       .mobile-cta {
@@ -236,6 +245,7 @@
 
   .homepage {
     &:not(.fp-viewing-home) {
+      .body-container {
       h1 {
         font-size: 24px;
       }
@@ -247,6 +257,7 @@
         margin:20px auto;
         display:table;
       }
+    }
     }
     &.fp-viewing-collaboration, &.fp-viewing-data-management {
       .main-cta {
@@ -274,6 +285,7 @@
 
   .homepage {
     &:not(.fp-viewing-home) {
+      .body-container {
       h1 {
         font-size: 24px;
       }
@@ -288,6 +300,7 @@
       .spacer {
         display: none !important;
       }
+    }
     }
     &.fp-viewing-collaboration {
       .main-cta {

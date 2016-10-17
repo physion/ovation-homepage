@@ -163,31 +163,38 @@ body {
   }
 }
 @media (min-width: 769px) {
-  .hs-image-widget {
-    display:none;
-  }
-  #dlgeneric_hype_container {
-    display:block !important;
-  }
-  .products-nav {
-    left:calc(50% - 280px);
-    li {
-      width: 150px;
-      padding:8px 10px;
-      &:first-child {
-        margin-right:20px;
+  body {
+    &.products {
+     .body-container {
+       .hs-image-widget {
+          display:none;
+        }
+        #dlgeneric_hype_container {
+          display:block !important;
+        }
+        .products-nav {
+          left:calc(50% - 280px);
+          li {
+            width: 150px;
+            padding:8px 10px;
+            &:first-child {
+              margin-right:20px;
+            }
+            &:last-child {
+              margin-left:20px;
+            }
+            a {
+              font-size:24px;
+            }
+          }
+        }
       }
-      &:last-child {
-        margin-left:20px;
-      }
-      a {
-        font-size:24px;
-      }
-    }
-  }
+}}
 }
 
 @media (max-width: 768px) {
+  body {
+    &.products {
   .products-nav {
     left:calc(50% - 160px);
     li {
@@ -210,4 +217,5 @@ body {
   .hs-image-widget {
     display:block;
   }
+}}
 }

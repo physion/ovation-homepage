@@ -77,12 +77,14 @@
             {% header "module_about_2" header_tag='h2', overrideable=True, wrapping_html='', value='Spend more time doing great science, and less time herding cats', label='Main Headline' %}
           </div>
           <div class="span6">
-            <p class="main-copy">{% text "module_about_3" value='Never wonder about which version of a file your colleague used for an analysis, or the status of a sample in your lab. Scientists and lab staff who use Ovation have more time to do the great scientific work they signed up for.', label='One Line of Text', overrideable=True, wrapping_html='' %}</p>
+          {% widget_block rich_text "block-u" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
+                            <p class="p1"><span class="s1">Never wonder about which version of a file your colleague used for an analysis, or the status of a sample in your lab. Scientists and lab staff who use Ovation have more time to do the great scientific work they signed up for. </span></p>{%
+                            end_widget_attribute %} {% end_widget_block %}
           </div>
         </div>
         <div class="row-fluid img-container">
           <div class="span12">
-            {% linked_image "module_about_4" src='http://cdn2.hubspot.net/hubfs/730505/line-graph.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% linked_image "module_about_4" src='http://cdn2.hubspot.net/hubfs/730505/line-graph.png', link='', wrapping_html='', overrideable=True, open_in_new_tab=False %}
           </div>
         </div>
       </div>
@@ -94,35 +96,37 @@
         </div>
         <div class="row-fluid map-group">
           <div class="span6">
-            <p class="main-copy">{% text "module_about_3" value="We're not just creating tools for scientists—some of us used to be scientists. Our collective years of experience conducting experiments, running analyses, working at the bench in a lab, and publishing results gives us an unparalleled insight into the day-to-day aches and pains of the scientific world. Add to that a strong sensitivity for great, user-centered design and a seasoned technical team, and you have a formula for cutting-edge products that solve hard problems. We're committed to helping scientists do great, world-changing science, without the headaches.", label='One Line of Text', overrideable=True, wrapping_html='' %}</p>
+          {% widget_block rich_text "block-v" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
+                            <p class="p1"><span class="s1">We're not just creating tools for scientists—some of us used to be scientists. Our collective years of experience conducting experiments, running analyses, working at the bench in a lab, and publishing results gives us an unparalleled insight into the day-to-day aches and pains of the scientific world. Add to that a strong sensitivity for great, user-centered design and a seasoned technical team, and you have a formula for cutting-edge products that solve hard problems. We're committed to helping scientists do great, world-changing science, without the headaches. </span></p>{%
+                            end_widget_attribute %} {% end_widget_block %}
           </div>
           <div class="span6">
-            {% linked_image "module_about_4" src='http://cdn2.hubspot.net/hubfs/730505/about-map.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% linked_image "module_about_10" src='http://cdn2.hubspot.net/hubfs/730505/about-map.png', link='', wrapping_html='', overrideable=True, open_in_new_tab=False %}
           </div>
         </div>
         <div class="row-fluid">
           <div class="span12">
-            {% header "module_about_5" header_tag='h2', overrideable=True, wrapping_html='', value='Executive Team', label='Main Headline' %}
+            {% header "module_about_88" header_tag='h2', overrideable=True, wrapping_html='', value='Executive Team', label='Main Headline' %}
           </div>
         </div>
         <div class="row-fluid team-images">
           <div class="span3">
-            {% linked_image "module_about_6" src='http://cdn2.hubspot.net/hubfs/730505/barry.jpg', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% linked_image "module_about_100" src='http://cdn2.hubspot.net/hubfs/730505/barry.jpg', link='', wrapping_html='', overrideable=True, open_in_new_tab=False %}
             <h4>Barry Wark</h4>
             <h4>Co-founder/CEO</h4>
           </div>
           <div class="span3">
-            {% linked_image "module_about_7" src='http://cdn2.hubspot.net/hubfs/730505/winston-2.jpg', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% linked_image "module_about_99" src='http://cdn2.hubspot.net/hubfs/730505/winston-2.jpg', link='', wrapping_html='', overrideable=True, open_in_new_tab=False %}
             <h4>Winston Brasor</h4>
             <h4>Co-founder/CCO</h4>
           </div>
           <div class="span3">
-            {% linked_image "module_about_8" src='http://cdn2.hubspot.net/hubfs/730505/rens.jpg', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% linked_image "module_about_98" src='http://cdn2.hubspot.net/hubfs/730505/rens.jpg', link='', wrapping_html='', overrideable=True, open_in_new_tab=False %}
             <h4>Rens Methratta</h4>
             <h4>Chief Architect</h4>
           </div>
           <div class="span3">
-            {% linked_image "module_about_9" src='http://cdn2.hubspot.net/hubfs/730505/adam.jpg', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% linked_image "module_about_97" src='http://cdn2.hubspot.net/hubfs/730505/adam.jpg', link='', wrapping_html='', overrideable=True, open_in_new_tab=False %}
             <h4>Adam Hasler</h4>
             <h4>Head of Design</h4>
           </div>
@@ -152,10 +156,14 @@
 
   {{ standard_footer_includes }}
 
-  <script src="../../page/js/jquery.min.js"></script>
-  <script src="../../page/js/jquery.overly.js"></script>
-  <script src="../../page/js/jquery.fullPage.min.js"></script>
-  <script src="../../page/js/script.min.js"></script>
+  <script>
+  if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'%3E%3C/script%3E"));
+  }
+</script>
+<script src={{ get_public_template_url("custom/page/js/jquery.overly.js") }}></script>
+<script src={{ get_public_template_url("custom/page/js/jquery.fullPage.min.js") }}></script>
+<script src={{ get_public_template_url("custom/page/js/script.min.js") }}></script>
   <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
 
