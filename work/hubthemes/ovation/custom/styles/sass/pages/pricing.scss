@@ -40,7 +40,7 @@ body {
     .pricing-main {
       background-color:#f8f8f8;
       padding: 45px 0;
-      box-shadow: 0px 2px 4px 0px rgba(187,187,187,0.50);
+      // box-shadow: 0px 2px 4px 0px rgba(187,187,187,0.50);
       .pricing-boxes-container {
         margin: 0 auto !important;
         float: none !important;
@@ -134,7 +134,7 @@ body {
             border: 1px solid #FFA45B;
           }
           &.red {
-            border: 1px solid #C02580;
+            // border: 1px solid #C02580;
           }
           h1, h2, h3 {
             color:#717171 !important;
@@ -350,6 +350,17 @@ body {
             }
           }
 
+      }
+
+      .not-to-mention {
+        margin:50px 0px;
+      }
+
+      .pricing-bracket {
+        display:none;
+      }
+      .feature-list {
+        text-align: center;
       }
     }
   }
