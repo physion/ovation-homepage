@@ -107,7 +107,7 @@
       line-height: 1.5em !important;
       font-size:60px;
       text-align:center;
-      margin:100px 0px;
+      margin:100px 0px 50px;
       span {
         border-bottom:3px solid #fff;
         a {
@@ -205,6 +205,19 @@
   .mobile-cta {
     display:none !important;
   }
+}
+
+@media (max-width: 768px) {
+  .fp-viewing-home {
+        video {
+          display:none;
+        }
+        .fp-tableCell {
+        background-image: url('http://cdn2.hubspot.net/hubfs/730505/homepage-bg.png');
+        background-size:auto 100%;
+        z-index:-2;
+      }
+    }
 }
 
 @media (max-width: 768px) and  (min-width:401px) {
