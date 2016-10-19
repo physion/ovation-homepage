@@ -1,4 +1,16 @@
-
+@mixin font-face($name, $path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: $name;
+		src: url('http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/' + $path + '-webfont.eot');
+		src: url('http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/' + $path + '-webfont.eot?#iefix') format('embedded-opentype'),
+				 url('http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/' + $path + '-webfont.woff') format('woff'),
+				 url('http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/' + $path + '-webfont.woff') format('woff2'),
+				 url('http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/' + $path + '-webfont.ttf') format('truetype'),
+				 url('http://cdn2.hubspot.net/hubfs/730505/new-website-assets/fonts/' + $path + '-webfont.svg##{$name}') format('svg');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
 
 /* CSS Effects */
 @mixin opacity($opacity) {

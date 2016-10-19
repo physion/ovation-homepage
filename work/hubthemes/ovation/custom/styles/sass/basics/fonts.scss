@@ -12,15 +12,13 @@ $proxima-nova-italic: "proxima-nova",sans-serif;
 $proxima-nova-light: "proxima-nova",sans-serif;
 $proxima-nova-lightitalic: "proxima-nova",sans-serif;
 
-/*
+
 @include font-face('Fanwood Italic', 'fanwood_italic', normal, normal);
 @include font-face('Fanwood Text Italic', 'fanwood_text_italic', bold, normal);
 @include font-face('Fanwood Text', 'fanwood_text', normal, italic);
-*/
 
-$fanwood-italic: "baskerville-urw",sans-serif;
-$fanwood-text-italic: "baskerville-urw",sans-serif;
-$fanwood-text: "baskerville-urw",sans-serif;
-/*
+$fanwood-italic: "Fanwood Italic",sans-serif;
+$fanwood-text-italic: "Fanwood Text Italic",sans-serif;
+$fanwood-text: "Fanwood Text",sans-serif;
+
 @include font-face('Fontawesome', 'fontawesome', normal, normal);
-*/

@@ -345,8 +345,10 @@
 }
 
 @media (max-width:668px) {
-  .hs_cos_wrapper_type_rich_text p {
-    display:none !important;
+  .homepage {
+    .hs_cos_wrapper_type_rich_text p {
+      display:none !important;
+    }
   }
   .fp-viewing-data-management {
     .main-cta {

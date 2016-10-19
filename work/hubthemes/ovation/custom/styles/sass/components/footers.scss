@@ -137,7 +137,9 @@ body:not(.homepage) {
 
 
 @media (max-width: 667px) {
+  .homepage {
   .footer-container-wrapper {
     display:none;
   }
+}
 }
