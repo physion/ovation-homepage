@@ -1,4 +1,5 @@
 .homepage {
+  .body-container {
   h1 {
     font-family:$proxima-nova-light;
     line-height:1em;
@@ -35,7 +36,9 @@
     padding-right:50px;
     padding-left:50px;
   }
+}
   &.fp-viewing-home {
+    .body-container {
     .active {
       video {
         display:block;
@@ -66,7 +69,7 @@
         }
       }
     }
-
+    }
     video {
       position: absolute;
       right: 0;
@@ -405,8 +408,10 @@
 
 @media (max-width:400px) {
   .fp-viewing-home {
+    .body-container {
     h1 {
       margin:75px 0px 30px;
     }
+  }
   }
 }

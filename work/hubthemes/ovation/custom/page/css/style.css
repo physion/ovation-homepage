@@ -8841,48 +8841,48 @@ button[disabled] {
     color: #26A91E !important;
     background-color: transparent; }
 
-.homepage h1 {
+.homepage .body-container h1 {
   font-family: "Proxima Nova Light", Arial, sans-serif;
   line-height: 1em;
   margin-bottom: 20px; }
-.homepage p {
+.homepage .body-container p {
   margin-bottom: 10px;
   color: #585858; }
-.homepage a p span {
+.homepage .body-container a p span {
   font-family: "Proxima Nova Regular", Arial, sans-serif;
   text-decoration: underline;
   color: #26A91E !important; }
-.homepage video {
+.homepage .body-container video {
   display: none; }
-.homepage #fp-nav ul li .fp-tooltip {
+.homepage .body-container #fp-nav ul li .fp-tooltip {
   font-family: "Fanwood Text Italic", Georgia, serif;
   font-size: 24px;
   top: 5px;
   height: 30px;
   line-height: 1em;
   right: 30px; }
-.homepage .main-wrapper, .homepage .main-container {
+.homepage .body-container .main-wrapper, .homepage .body-container .main-container {
   padding-top: 100px;
   padding-right: 50px;
   padding-left: 50px; }
-.homepage.fp-viewing-home .active video {
+.homepage.fp-viewing-home .body-container .active video {
   display: block; }
-.homepage.fp-viewing-home .hs-cta-wrapper {
+.homepage.fp-viewing-home .body-container .hs-cta-wrapper {
   margin: 0 auto 5%;
   display: table;
   font-size: 36px; }
-  .homepage.fp-viewing-home .hs-cta-wrapper a {
+  .homepage.fp-viewing-home .body-container .hs-cta-wrapper a {
     padding: 10px 30px; }
-.homepage.fp-viewing-home h1 {
+.homepage.fp-viewing-home .body-container h1 {
   color: #fff !important;
   font-family: "Proxima Nova Light", Arial, sans-serif !important;
   line-height: 1.5em !important;
   text-align: center; }
-  .homepage.fp-viewing-home h1 span {
+  .homepage.fp-viewing-home .body-container h1 span {
     border-bottom: 3px solid #fff; }
-    .homepage.fp-viewing-home h1 span a {
+    .homepage.fp-viewing-home .body-container h1 span a {
       color: #fff; }
-      .homepage.fp-viewing-home h1 span a:hover {
+      .homepage.fp-viewing-home .body-container h1 span a:hover {
         color: #26A91E;
         text-decoration: none; }
 .homepage.fp-viewing-home video {
@@ -9063,7 +9063,7 @@ button[disabled] {
   .fp-viewing-home h1 {
     margin: 50px 0px 30px; } }
 @media (max-width: 400px) {
-  .fp-viewing-home h1 {
+  .fp-viewing-home .body-container h1 {
     margin: 75px 0px 30px; } }
 .about .body-container {
   padding-top: 100px; }
