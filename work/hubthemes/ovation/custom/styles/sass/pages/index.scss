@@ -1,9 +1,10 @@
 .homepage {
   .body-container {
   h1 {
-    font-family:$proxima-nova-light;
+    font-family:$proxima-nova-regular;
     line-height:1em;
     margin-bottom:20px;
+    font-weight:300;
   }
   p {
     margin-bottom:10px;
@@ -329,13 +330,15 @@
 
 @media (min-width:668px) {
   .fp-viewing-home {
-    h1 {
-      margin:100px 0px 50px;
-      font-size:60px;
-    }
-    .main-wrapper {
-      //margin-top: calc(100px + 2%);
-      padding:150px 5%;
+    .body-container {
+      h1 {
+        margin:100px 0px 50px;
+        font-size:60px;
+      }
+      .main-wrapper {
+        //margin-top: calc(100px + 2%);
+        padding:150px 5%;
+      }
     }
   }
 

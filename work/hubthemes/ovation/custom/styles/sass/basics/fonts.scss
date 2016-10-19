@@ -1,21 +1,26 @@
+/*
 @include font-face('Proxima Nova Regular', 'proximanova-regular', normal, normal);
 @include font-face('Proxima Nova Semibold', 'proximanova-semibold', bold, normal);
 @include font-face('Proxima Nova Italic', 'proximanova-regitalic', normal, italic);
 @include font-face('Proxima Nova Light', 'proximanova-light', lighter, normal);
 @include font-face('Proxima Nova Light Italic', 'proximanova-lightitalic', lighter, italic);
+*/
 
-$proxima-nova-regular: 'Proxima Nova Regular', Arial, sans-serif;
-$proxima-nova-semibold: 'Proxima Nova Semibold', Arial, sans-serif;
-$proxima-nova-italic: 'Proxima Nova Italic', Arial, sans-serif;
-$proxima-nova-light: 'Proxima Nova Light', Arial, sans-serif;
-$proxima-nova-lightitalic: 'Proxima Nova Light Italic', Arial, sans-serif;
+$proxima-nova-regular: "proxima-nova",sans-serif;
+$proxima-nova-semibold: "proxima-nova",sans-serif;
+$proxima-nova-italic: "proxima-nova",sans-serif;
+$proxima-nova-light: "proxima-nova",sans-serif;
+$proxima-nova-lightitalic: "proxima-nova",sans-serif;
 
+/*
 @include font-face('Fanwood Italic', 'fanwood_italic', normal, normal);
 @include font-face('Fanwood Text Italic', 'fanwood_text_italic', bold, normal);
 @include font-face('Fanwood Text', 'fanwood_text', normal, italic);
+*/
 
-$fanwood-italic: 'Fanwood Italic', Georgia, serif;
-$fanwood-text-italic: 'Fanwood Text Italic', Georgia, serif;
-$fanwood-text: 'Fanwood Text', Georgia, serif;
-
+$fanwood-italic: "baskerville-urw",sans-serif;
+$fanwood-text-italic: "baskerville-urw",sans-serif;
+$fanwood-text: "baskerville-urw",sans-serif;
+/*
 @include font-face('Fontawesome', 'fontawesome', normal, normal);
+*/

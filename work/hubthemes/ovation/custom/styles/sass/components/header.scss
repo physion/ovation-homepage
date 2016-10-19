@@ -15,10 +15,12 @@ body{
         }
       }
     }
-    .widget-type-logo {
-      g, text {
-        fill:white;
-      }
+    .logo {
+      background-image: url('http://cdn2.hubspot.net/hubfs/730505/new-website-assets/white-logo.png');
+      width:135px;
+      height:60px;
+      background-size: 100% auto;
+      background-repeat:no-repeat;
     }
     #overly_open {
       color:white;
@@ -42,6 +44,13 @@ body{
   }
   .widget-type-logo {
     float:left !important;
+  }
+  .logo {
+    width:135px;
+    height:60px;
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+    background-image: url('http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ovation-full-logo-revised-transparent-ov.png');
   }
 }
 
