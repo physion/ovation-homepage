@@ -8852,6 +8852,8 @@ button[disabled] {
   font-family: "Proxima Nova Regular", Arial, sans-serif;
   text-decoration: underline;
   color: #26A91E !important; }
+.homepage video {
+  display: none; }
 .homepage #fp-nav ul li .fp-tooltip {
   font-family: "Fanwood Text Italic", Georgia, serif;
   font-size: 24px;
@@ -8963,8 +8965,6 @@ button[disabled] {
   .mobile-cta {
     display: none !important; } }
 @media (max-width: 768px) {
-  .fp-viewing-home video {
-    display: none; }
   .fp-viewing-home .fp-tableCell {
     background-image: url("http://cdn2.hubspot.net/hubfs/730505/homepage-bg.png");
     background-size: auto 100%;
@@ -9040,7 +9040,7 @@ button[disabled] {
     margin: 50px 0px 30px; } }
 @media (max-width: 400px) {
   .fp-viewing-home h1 {
-    margin: 150px 0px 30px; } }
+    margin: 75px 0px 30px; } }
 .about .body-container {
   padding-top: 100px; }
 .about .hero-container {
