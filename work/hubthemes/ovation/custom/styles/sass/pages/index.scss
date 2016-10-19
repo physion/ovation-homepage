@@ -1,94 +1,40 @@
 .homepage {
-  .main-container {
-    padding-top: 100px;
+  h1 {
+    font-family:$proxima-nova-light;
+    line-height:1em;
+    margin-bottom:20px;
   }
-  &.fp-viewing-home {
-    .body-container {
-    #fp-nav {
-      ul {
-        li {
-          .fp-tooltip {
-            color:#ffffff !important;
-          }
-        }
-      }
-    }
+  p {
+    margin-bottom:10px;
+    color: #585858;
   }
-  &:not(.fp-viewing-home) {
-    #fp-nav {
-      ul {
-        li {
-          .fp-tooltip {
-            color:#979797 !important;
-          }
-        }
-      }
-    }
+  a p span {
+    font-family:$proxima-nova-regular;
+    text-decoration:underline;
+    color: $main-green !important;
   }
   #fp-nav {
     ul {
       li {
         .fp-tooltip {
-          font-family:$fanwood-text-italic !important;
-          font-size:24px !important;
-          line-height:24px;
-          top:5px !important;
-
-          &.right {
-            right:30px !important;
-          }
+          font-family:$fanwood-text-italic;
+          font-size:24px;
+          top:5px;
+          height:30px;
+          line-height: 1em;
+          right:30px;
         }
       }
     }
   }
-  #myVideo{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top:0;
-    right:0;
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    background-color: black; /* in case the video doesn't fit the whole page*/
-    background-position: center center;
-    background-size: contain;
-    object-fit: cover; /*cover video background */
-    z-index:-1;
+  .main-wrapper, .main-container {
+    padding-top:100px;
+    padding-right:50px;
   }
-
-  &:not(.fp-viewing-home) {
-    display:none;
-    .left-column-image {
-      img {
-        width:100%;
-      }
-    }
-    h1 {
-      font-family:$proxima-nova-light;
-      line-height:1em;
-      margin-bottom:20px;
-    }
-    p {
-      margin-bottom:10px;
-      color: #585858;
-    }
-    a p span {
-      font-family:$proxima-nova-regular;
-      text-decoration:underline;
-      color: $main-green !important;
-    }
-  }
-
-
-
   &.fp-viewing-home {
-    .body-container {
-    ul {
-      li {
-        .fp-tooltip {
-          color:white !important;
-        }
+    .active {
+      video {
+        display:block;
       }
     }
     .hs-cta-wrapper {
@@ -116,6 +62,58 @@
         }
       }
     }
+
+    video {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top:0;
+      right:0;
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      background-color: black; /* in case the video doesn't fit the whole page*/
+      background-position: center center;
+      background-size: contain;
+      object-fit: cover; /*cover video background */
+      z-index:-1;
+      display:none;
+    }
+  }
+  &:not(.fp-viewing-home) {
+    .left-column-image {
+      // padding-top:100px;
+      img {
+        width:100%;
+      }
+    }
+    #fp-nav {
+      ul {
+        li {
+          .fp-tooltip {
+            color:#979797 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/*
+  &.fp-viewing-home {
+    .body-container {
+    ul {
+      li {
+        .fp-tooltip {
+          color:white !important;
+        }
+      }
+    }
+
     }
 
 
@@ -156,16 +154,16 @@
   }
 
 }
+*/
+
 
 @media (min-width: 769px) {
+
   .device-image {
     display:none !important;
   }
   .mobile-cta {
     display:none !important;
-  }
-  .main-container {
-    padding-right: 50px;
   }
 }
 
@@ -189,7 +187,6 @@
   }
   .homepage {
     :not(.fp-viewing-home) {
-      .body-container {
       h1, a {
         text-align:center;
       }
@@ -198,7 +195,6 @@
         margin:0px auto;
         display:table;
       }
-    }
     }
     &.fp-viewing-collaboration, &.fp-viewing-data-management {
       .mobile-cta {
@@ -209,8 +205,6 @@
       }
     }
   }
-
-
 }
 
 @media (max-width: 768px) and  (min-width:402px) {
@@ -221,18 +215,18 @@
   .homepage {
     &:not(.fp-viewing-home) {
       .body-container {
-      h1 {
-        font-size: 24px;
+        h1 {
+          font-size: 24px;
+        }
+        h1, a {
+          text-align:center;
+        }
+        img {
+          max-height:200px;
+          margin:20px auto;
+          display:table;
+        }
       }
-      h1, a {
-        text-align:center;
-      }
-      img {
-        max-height:200px;
-        margin:20px auto;
-        display:table;
-      }
-    }
     }
     &.fp-viewing-collaboration, &.fp-viewing-data-management {
       .main-cta {
