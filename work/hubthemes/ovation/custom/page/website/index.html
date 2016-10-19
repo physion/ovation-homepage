@@ -116,33 +116,30 @@
               </div>
               <div class="section">
                 <div class="row main-container">
-                  <div class="span12">
-                    {% header "home-4" header_tag='h1', overrideable=True, wrapping_html='', value='Ovation provides unprecedented visibility into your samples’ progress', label='Main Headline' %}
-                  </div>
+                  <row>
+                    <div class="span12">
+                      {% header "home-4" header_tag='h1', overrideable=True, wrapping_html='', value='Ovation provides unprecedented visibility into your samples’ progress', label='Main Headline' %}
+                    </div>
+                  </row>
                   <div class="row">
-                    <div class="span1 spacer"></div>
-                    <div class="span5 offset1">
+                    <div class="span6 main-image">
                       {% linked_image "home-5" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/workflow-anim.gif', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
                     </div>
-                    <div class="span5">
-                            {% widget_block rich_text "module_146645466834219981" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
-                            <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
-                            end_widget_attribute %} {% end_widget_block %}                    </div>
-                  </div>
-                  <div class="span12">
-                    <!--HubSpot Call-to-Action Code -->
-                    <span class="hs-cta-wrapper main-cta" id="hs-cta-wrapper-23b9980e-5381-4df1-a833-7e0107ebaab8">
-                        <span class="hs-cta-node hs-cta-23b9980e-5381-4df1-a833-7e0107ebaab8" id="hs-cta-23b9980e-5381-4df1-a833-7e0107ebaab8">
-                            <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
-                            <a href="http://cta-redirect.hubspot.com/cta/redirect/730505/23b9980e-5381-4df1-a833-7e0107ebaab8" ><img class="hs-cta-img" id="hs-cta-img-23b9980e-5381-4df1-a833-7e0107ebaab8" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/730505/23b9980e-5381-4df1-a833-7e0107ebaab8.png"  alt="Read more about Ovation Service Lab"/></a>
-                        </span>
-                        <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
-                        <script type="text/javascript">
-                            hbspt.cta.load(730505, '23b9980e-5381-4df1-a833-7e0107ebaab8', {});
-                        </script>
-                    </span>
-                    <!-- end HubSpot Call-to-Action Code -->
-
+                    <div class="span6 sample-copy">
+                      {% widget_block rich_text "module_sampe-copy" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
+                      <p><span class="s1">Ovation Service Lab takes a whole new twist on the laboratory information management system (LIMS) by combining the essential elements of sample tracking, workflow management, document control, and training management all in one system.  It even offers sales, customer and physician portals, making you an instant full-service lab.  Whether you are performing NGS services or qPCR clinical diagnostics, Ovation Service Lab has you covered.</span></p>{%
+                      end_widget_attribute %} {% end_widget_block %}
+                      <span class="hs-cta-wrapper main-cta" id="hs-cta-wrapper-23b9980e-5381-4df1-a833-7e0107ebaab8">
+                          <span class="hs-cta-node hs-cta-23b9980e-5381-4df1-a833-7e0107ebaab8" id="hs-cta-23b9980e-5381-4df1-a833-7e0107ebaab8">
+                              <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
+                              <a href="http://cta-redirect.hubspot.com/cta/redirect/730505/23b9980e-5381-4df1-a833-7e0107ebaab8" ><img class="hs-cta-img" id="hs-cta-img-23b9980e-5381-4df1-a833-7e0107ebaab8" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/730505/23b9980e-5381-4df1-a833-7e0107ebaab8.png"  alt="Read more about Ovation Service Lab"/></a>
+                          </span>
+                          <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+                          <script type="text/javascript">
+                              hbspt.cta.load(730505, '23b9980e-5381-4df1-a833-7e0107ebaab8', {});
+                          </script>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -244,6 +241,7 @@
 <script src={{ get_public_template_url("custom/page/js/jquery.overly.js") }}></script>
 <script src={{ get_public_template_url("custom/page/js/jquery.fullPage.min.js") }}></script>
 <script src={{ get_public_template_url("custom/page/js/script.min.js") }}></script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
 
 
