@@ -8793,7 +8793,7 @@ body:not(.homepage) .footer-container-wrapper {
       position: absolute;
       top: calc(50% - 14px); }
 
-@media (max-width: 568px) {
+@media (max-width: 667px) {
   .footer-container-wrapper {
     display: none; } }
 .hs-cta-wrapper.button a, .orange.hs-cta-wrapper a.hs-cta-wrapper a, .green.hs-cta-wrapper a.hs-cta-wrapper a {
@@ -8962,6 +8962,9 @@ button[disabled] {
 }
 */
 @media (min-width: 769px) {
+  .data-management-copy {
+    padding-top: 50px; }
+
   .device-image {
     display: none !important; }
 
@@ -8988,6 +8991,9 @@ button[disabled] {
     background-size: auto 100%;
     z-index: -2; }
 
+  .fp-viewing-data-management .span5, .fp-viewing-data-management .span7 {
+    width: 100%; }
+
   .fp-viewing-collaboration .collaboration-copy {
     width: 100% !important; }
   .fp-viewing-collaboration .span7 {
@@ -9003,13 +9009,17 @@ button[disabled] {
   .fp-viewing-sample-tracking .span6 {
     width: 100%; }
     .fp-viewing-sample-tracking .span6:first-child {
-      margin-bottom: 20px; } }
-@media (max-width: 768px) and (min-width: 569) {
+      margin-bottom: 20px; }
+  .fp-viewing-sample-tracking .main-image {
+    display: none; }
+  .fp-viewing-sample-tracking .device-image {
+    display: block; } }
+@media (max-width: 768px) and (min-width: 668) {
   .homepage.fp-viewing-collaboration .collaboration-copy {
     padding-top: 25px; }
   .homepage.fp-viewing-collaboration .span7 img {
     width: 500px !important; } }
-@media (max-width: 768px) and (min-width: 401px) {
+@media (max-width: 667px) and (min-width: 401px) {
   .homepage .main-container, .homepage .main-wrapper {
     padding-left: 50px; }
 
@@ -9066,13 +9076,19 @@ button[disabled] {
     display: block; }
   .homepage .main-copy {
     display: none !important; } }
-@media (min-width: 569px) {
+@media (min-width: 668px) {
   .fp-viewing-home h1 {
     margin: 100px 0px 50px;
     font-size: 60px; }
   .fp-viewing-home .main-wrapper {
     padding: 150px 5%; } }
-@media (max-width: 568px) {
+@media (max-width: 668px) {
+  .hs_cos_wrapper_type_rich_text p {
+    display: none !important; }
+
+  .fp-viewing-data-management .main-cta {
+    display: none; }
+
   h1 {
     font-size: 32px; }
 

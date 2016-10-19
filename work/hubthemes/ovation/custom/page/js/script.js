@@ -38,12 +38,12 @@ $(document).ready(function() {
           $(".arrow").show();
           $("footer h2").html('Sample Tracking');
           $("footer #footer-nav-link").attr("href", "#sample-tracking");
-          $('img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/new-website-assets/collaboration-anim.gif');
+          $('.left-column-image img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/new-website-assets/collaboration-anim.gif');
         } else if (anchorLink == 3) {
           $(".arrow").show();
           $("footer h2").html('Data Management');
           $("footer #footer-nav-link").attr("href", "#data-management");
-          $('img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/new-website-assets/workflow-anim.gif');
+          $('.main-image img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/new-website-assets/workflow-anim.gif');
         } else if (anchorLink == 4) {
           http://cdn2.hubspot.net/hubfs/730505/new-website-assets/provenance-anim.gif
           $(".arrow").show();
