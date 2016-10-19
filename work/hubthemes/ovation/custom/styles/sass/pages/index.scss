@@ -1,4 +1,7 @@
 .homepage {
+  .main-container {
+    padding-top: 100px;
+  }
   &.fp-viewing-home {
     .body-container {
     #fp-nav {
@@ -55,13 +58,10 @@
   }
 
   &:not(.fp-viewing-home) {
-    .body-container {
-    .main-container {
-      padding-top: 125px;
-      .left-column-image {
-        img {
-          width:100%;
-        }
+    display:none;
+    .left-column-image {
+      img {
+        width:100%;
       }
     }
     h1 {
@@ -78,7 +78,6 @@
       text-decoration:underline;
       color: $main-green !important;
     }
-  }
   }
 
 
@@ -105,9 +104,7 @@
       color:#fff !important;
       font-family: $proxima-nova-light !important;
       line-height: 1.5em !important;
-      font-size:60px;
       text-align:center;
-      margin:100px 0px 50px;
       span {
         border-bottom:3px solid #fff;
         a {
@@ -121,55 +118,17 @@
     }
     }
 
-    .main-wrapper {
-      //margin-top: calc(100px + 2%);
-      padding:150px 5%;
-    }
-
-    #cycle-list {
-      margin:0px;
-      li {
-        display: inline-block !important;
-      }
-      li:last-child {
-        border-bottom: 1px solid white;
-      }
-      list-style:none;
-      a:hover {
-        text-decoration:none;
-      }
-      #list-1 {
-        opacity: .25;
-      }
-      #list-2 {
-        opacity: .5;
-      }
-      #list-3 {
-        opacity: .75;
-      }
-      #list-4 {
-        opacity: 1;
-        font-family:$proxima-nova-semibold;
-      }
-    }
-
 
   }
 
 
   &.fp-viewing-collaboration, &.fp-viewing-data-management {
 
-    .main-container {
-      padding-left:5%;
-      padding-right:10%;
-    }
+
   }
 
   &.fp-viewing-sample-tracking, &.fp-viewing-enterprise {
-    .main-container {
-      padding-left:5%;
-      padding-right:5%;
-    }
+
     h1{
       text-align: center;
     }
@@ -204,6 +163,9 @@
   }
   .mobile-cta {
     display:none !important;
+  }
+  .main-container {
+    padding-right: 50px;
   }
 }
 
@@ -325,6 +287,45 @@
     }
     .main-copy {
       display:none !important;
+    }
+  }
+}
+
+@media (min-width:569px) {
+  .fp-viewing-home {
+    h1 {
+      margin:100px 0px 50px;
+      font-size:60px;
+    }
+    .main-wrapper {
+      //margin-top: calc(100px + 2%);
+      padding:150px 5%;
+    }
+  }
+}
+
+@media (max-width:568px) {
+  h1 {
+    //margin:100px 0px 50px;
+    font-size:32px;
+  }
+  .main-wrapper {
+    padding:50px 5%;
+  }
+}
+
+@media (max-width:568px) and (min-width:401px) {
+  .fp-viewing-home {
+    h1 {
+      margin:50px 0px 30px;
+    }
+  }
+}
+
+@media (max-width:400px) {
+  .fp-viewing-home {
+    h1 {
+      margin:150px 0px 30px;
     }
   }
 }
