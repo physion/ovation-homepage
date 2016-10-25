@@ -114,6 +114,13 @@
 
 
 @media (min-width: 769px) {
+  .fp-viewing-enterprise {
+    .main-container {
+      .row {
+        margin-left:0px !important;
+      }
+    }
+  }
   .data-management-copy {
     padding-top:50px;
   }

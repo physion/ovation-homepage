@@ -160,7 +160,13 @@ body {
 @media (min-width: 769px) {
   body {
     &.products {
-
+      .products-c, .products-b {
+        img {
+          width:650px;
+          margin:0px auto;
+          display:table;
+        }
+      }
      .body-container {
        .video-container {
         padding:50px 200px;
@@ -172,11 +178,7 @@ body {
          padding:80px 150px;
        }
        .hero {
-         img {
-           width:650px;
-           margin:0px auto;
-           display:table;
-         }
+
          h1 {
            line-height:1.25em;
          }
