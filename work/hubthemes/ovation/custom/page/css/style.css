@@ -9734,7 +9734,7 @@ body.enterprise .body-container-wrapper .enterprise-header {
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(187, 187, 187, 0.5);
     border-radius: 2px;
-    float: none; }
+    float: none !important; }
     .landing-page .form-container .form-inner h1 {
       color: #5f5f5f;
       font-family: "proxima-nova", sans-serif;
@@ -9782,13 +9782,13 @@ body.enterprise .body-container-wrapper .enterprise-header {
 
 @media (min-width: 401px) {
   .landing-page .title-background {
-    padding: 150px 50px 75px; }
+    padding: 200px 50px 75px; }
     .landing-page .title-background h1 {
       font-size: 64px;
       padding: 0px 80px; }
 
   .form-container .form-inner {
-    margin: 0px auto;
+    margin: 40px auto !important;
     padding: 55px; }
     .form-container .form-inner form {
       width: 400px; }
