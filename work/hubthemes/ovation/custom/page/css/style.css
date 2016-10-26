@@ -9749,13 +9749,17 @@ body.enterprise .body-container-wrapper .enterprise-header {
       .landing-page .form-container .form-inner form .inputs-list {
         list-style: none;
         margin: 0px; }
+      .landing-page .form-container .form-inner form textarea {
+        height: 72px; }
       .landing-page .form-container .form-inner form select {
         border-radius: 2px;
         background-color: #FF8E33;
         font-size: 24px;
         height: 50px;
         width: 100%;
-        color: #ffffff; }
+        color: #ffffff;
+        border: none;
+        box-shadow: 0px 2px 4px 0px rgba(187, 187, 187, 0.5); }
       .landing-page .form-container .form-inner form .hs-form-field {
         margin-bottom: 15px; }
       .landing-page .form-container .form-inner form label {
@@ -9763,7 +9767,8 @@ body.enterprise .body-container-wrapper .enterprise-header {
         color: #858585;
         margin-bottom: 10px; }
       .landing-page .form-container .form-inner form input[type="text"], .landing-page .form-container .form-inner form input[type="email"] {
-        height: 36px;
+        height: 36px; }
+      .landing-page .form-container .form-inner form input[type="text"], .landing-page .form-container .form-inner form input[type="email"], .landing-page .form-container .form-inner form textarea {
         background-color: #f8f8f8;
         border: 1px solid #d3d3d3;
         font-size: 24px; }
@@ -9778,7 +9783,42 @@ body.enterprise .body-container-wrapper .enterprise-header {
         height: 50px;
         font-size: 24px;
         box-shadow: 0px 2px 4px 0px rgba(187, 187, 187, 0.5);
-        border-radius: 2px; }
+        border-radius: 2px;
+        border: none; }
+
+.lp-thank-you-generic .body-container, .lp-thank-you-two-column .body-container {
+  padding-bottom: 100px;
+  padding-top: 100px; }
+  .lp-thank-you-generic .body-container h1, .lp-thank-you-two-column .body-container h1 {
+    font-size: 2.5em;
+    font-family: "proxima-nova", sans-serif;
+    text-align: center;
+    color: #585858; }
+
+.lp-thank-you-two-column .body-container .download-link {
+  background-color: #f8f8f8;
+  border-radius: 2px;
+  height: 160px;
+  padding-top: 60px;
+  text-align: center; }
+  .lp-thank-you-two-column .body-container .download-link a {
+    background: #FF8E33;
+    border-radius: 2px;
+    padding: 20px 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    margin-top: 40px; }
+.lp-thank-you-two-column .body-container ul li {
+  font-size: 24px;
+  text-align: left !important;
+  color: #585858;
+  line-height: 1.5em; }
+.lp-thank-you-two-column .body-container ul a:hover {
+  text-decoration: none; }
+.lp-thank-you-two-column .body-container ul .fa {
+  margin-right: 20px; }
 
 @media (min-width: 401px) {
   .landing-page .title-background {
@@ -9787,14 +9827,26 @@ body.enterprise .body-container-wrapper .enterprise-header {
       font-size: 64px;
       padding: 0px 80px; }
 
+  .lp-thank-you-generic .body-container, .lp-thank-you-two-column .body-container {
+    padding-left: 2%;
+    padding-right: 2%; }
+    .lp-thank-you-generic .body-container h1, .lp-thank-you-two-column .body-container h1 {
+      margin: 80px 0px; }
+
   .form-container .form-inner {
     margin: 40px auto !important;
     padding: 55px; }
     .form-container .form-inner form {
       width: 400px; }
-      .form-container .form-inner form input[type="text"], .form-container .form-inner form input[type="email"] {
+      .form-container .form-inner form input[type="text"], .form-container .form-inner form input[type="email"], .form-container .form-inner form textarea {
         width: 100%; } }
 @media (max-width: 400px) {
+  .lp-thank-you-generic .body-container {
+    padding-left: 5%;
+    padding-right: 5%; }
+    .lp-thank-you-generic .body-container h1 {
+      margin: 40px 0px; }
+
   .landing-page .title-background {
     padding: 150px 10px 50px; }
     .landing-page .title-background h1 {
@@ -9805,5 +9857,7 @@ body.enterprise .body-container-wrapper .enterprise-header {
     padding: 20px 5px; }
     .form-container .form-inner form {
       width: 100%; }
-      .form-container .form-inner form input[type="text"], .form-container .form-inner form input[type="email"] {
+      .form-container .form-inner form input[type="text"], .form-container .form-inner form input[type="email"], .form-container .form-inner form textarea {
         width: calc(100% - 10px); } }
+.blog .body-container-wrapper {
+  padding-top: 150px; }

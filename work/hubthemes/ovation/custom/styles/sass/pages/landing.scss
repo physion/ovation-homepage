@@ -44,6 +44,9 @@
           list-style:none;
           margin:0px;
         }
+        textarea {
+          height: 72px;
+        }
         select {
           border-radius:2px;
           background-color:$main-orange;
@@ -51,6 +54,8 @@
           height:50px;
           width:100%;
           color:#ffffff;
+          border:none;
+          box-shadow: 0px 2px 4px 0px rgba(187,187,187,0.50);
         }
         .hs-form-field {
           margin-bottom: 15px;
@@ -62,6 +67,8 @@
         }
         input[type="text"], input[type="email"]  {
           height:36px;
+        }
+        input[type="text"], input[type="email"], textarea {
           background-color: #f8f8f8;
           border:1px solid #d3d3d3;
           font-size:24px;
@@ -80,7 +87,57 @@
           font-size:24px;
           box-shadow: 0px 2px 4px 0px rgba(187,187,187,0.50);
           border-radius: 2px;
+          border:none;
         }
+      }
+    }
+  }
+}
+
+.lp-thank-you-generic, .lp-thank-you-two-column {
+  .body-container {
+    h1 {
+      font-size:2.5em;
+      font-family:$proxima-nova-semibold;
+      text-align:center;
+      color:#585858;
+    }
+    padding-bottom:100px;
+    padding-top:100px;
+  }
+}
+
+.lp-thank-you-two-column {
+  .body-container {
+    .download-link {
+      background-color: #f8f8f8;
+      border-radius: 2px;
+      height: 160px;
+      padding-top: 60px;
+      text-align:center;
+      a {
+        background: $main-orange;
+        border-radius: 2px;
+        padding: 20px 60px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        color: white;
+        margin-top: 40px;
+      }
+    }
+    ul {
+      li {
+      font-size: 24px;
+      text-align: left !important;
+      color: #585858;
+      line-height:1.5em;
+      }
+      a:hover {
+        text-decoration:none;
+      }
+      .fa {
+        margin-right: 20px;
       }
     }
   }
@@ -96,6 +153,15 @@
       }
     }
   }
+  .lp-thank-you-generic, .lp-thank-you-two-column {
+    .body-container {
+      padding-left:2%;
+      padding-right:2%;
+      h1 {
+        margin: 80px 0px;
+      }
+    }
+  }
   .form-container {
 
     .form-inner {
@@ -103,7 +169,7 @@
       padding:55px;
       form {
         width:400px;
-        input[type="text"], input[type="email"]  {
+        input[type="text"], input[type="email"], textarea {
           width:100%;
         }
       }
@@ -112,6 +178,15 @@
 }
 
 @media (max-width:400px) {
+  .lp-thank-you-generic {
+    .body-container {
+      padding-left:5%;
+      padding-right:5%;
+      h1 {
+        margin: 40px 0px;
+      }
+    }
+  }
   .landing-page {
     .title-background {
       padding:150px 10px 50px;
@@ -127,7 +202,7 @@
       padding:20px 5px;
       form {
         width:100%;
-        input[type="text"], input[type="email"]  {
+        input[type="text"], input[type="email"], textarea {
           width:calc(100% - 10px);
         }
       }
