@@ -80,11 +80,13 @@
                                 <div class="span12 widget-span widget-type-blog_content " style="" data-widget-type="blog_content" data-x="3" data-w="6">
 
                                       <div class="index-container">
-                                        {% set blog_one_posts = blog_recent_posts('3178600524', limit=5) %}
+                                        {% set blog_one_posts = blog_recent_posts('3178600524', limit=5) %} <!-- Insights and News ->
                                         <!-- sets a variable for a the 5 most recent posts of my default COS blog -->
-                                        {% set blog_two_posts = blog_recent_posts('3861676176', limit=5) %}
+                                        {% set blog_two_posts = blog_recent_posts('3861676176', limit=5) %} <!-- OR -->
                                         <!-- sets a variable for a the 5 most recent posts of my blog id 47082700. You can find the blog id in the URL of the blog dashboard for a particular blog-->
-                                        {% set blog_three_posts = blog_recent_posts('3861681231', limit=5) %} {% set all_posts = (blog_one_posts + blog_two_posts + blog_three_posts) | sort(true, false, attribute='publish_date') %}
+                                        {% set blog_three_posts = blog_recent_posts('3861681231', limit=5) %} <!-- OSL -->
+
+                                        {% set all_posts = (blog_one_posts + blog_two_posts + blog_three_posts) | sort(true, false, attribute='publish_date') %}
                                         <!-- combines the two variables into a single variable and sorts them by publish date. Please note the sort filter requires all three parameters -->
                                         {% for post in all_posts %}
                                           <!-- loop through posts in custom all posts variable -->
@@ -146,11 +148,9 @@
                                     <div class="row-fluid-wrapper row-depth-1 row-number-3 ">
                                         <div class="row-fluid ">
                                           <!--end widget-span -->
-                                          {% if content.feature_image %}
+                                          {% if content.featured_image %}
                                             <div class="hs-featured-image-wrapper">
-                                                <a href="{{post.absolute_url}}" title="" class="hs-featured-image-link">
-                                                    <img src="{{ post.post_list_summary_featured_image }}" class="hs-featured-image">
-                                                </a>
+                                              <img src="{{ content.featured_image }}" class="hs-featured-image">
                                             </div>
                                           {% endif %}
                                           <div class="widget-span widget-type-raw_jinja " style="" data-widget-type="raw_jinja" data-x="3" data-w="6">
@@ -159,8 +159,8 @@
                                           <!--end widget-span -->
                                           <div id="hubspot-author_data" class="hubspot-editable author" data-hubspot-form-id="author_data" data-hubspot-name="Blog Author">
                                               <span class="hs-author-label">Posted by</span> {% if content.blog_post_author %}
-                                              <a class="author-link" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">{{ content.blog_post_author.display_name }}</a> on {{ content.publish_date_localized }} {% endif
-                                              %} {% blog_social_sharing "blog_social_sharing" overrideable=False, label='Blog Social Sharing' %}
+                                              <a class="author-link" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">
+                                              {{ content.blog_post_author.display_name }}</a> on {{ content.publish_date_localized }} {% endif %}
                                           </div>
 
                                         </div>
@@ -201,9 +201,37 @@
                             </div>
                           </div>
                         </div>
+                        <div class="row-fluid-wrapper row-depth-1 row-number-8 ">
+                           <div class="row-fluid ">
+                               <div class="span12 widget-span widget-type-blog_subscribe " style="" data-widget-type="blog_subscribe" data-x="0" data-w="12">
+                                  <h2>Get Ovation Updates Straight to Your Inbox</h2>
+                                   <div class="cell-wrapper layout-widget-wrapper">
+
+                                      <!--[if lte IE 8]>
+                                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                                      <![endif]-->
+                                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                                      <script>
+                                       hbspt.forms.create({
+                                         css: '',
+                                         portalId: '730505',
+                                         formId: '47cdc98a-157a-4f43-b304-2b2268c34085'
+                                       });
+                                      </script>
+
+                                   <!--end layout-widget-wrapper -->
+                               </div>
+                               <!--end widget-span -->
+                           </div>
+                           <!--end row-->
+                       </div>
+                       <!--end row-wrapper -->
+                     </div>
+                     <!--end row-->
                     {% endif %}
-                </div>
+                  </div>
                 <!--end row-->
+
                 <div class="push"></div>
             </div>
             <!--end row-wrapper -->

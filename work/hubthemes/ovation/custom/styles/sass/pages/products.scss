@@ -160,11 +160,18 @@ body {
 @media (min-width: 769px) {
   body {
     &.products {
-      .products-c, .products-b {
+      &.products-c, &.products-b {
         img {
           width:650px;
           margin:0px auto;
           display:table;
+        }
+      }
+      &.products-a {
+        .hero {
+          img {
+            display:none;
+          }
         }
       }
      .body-container {
@@ -183,9 +190,6 @@ body {
            line-height:1.25em;
          }
        }
-       .hs-image-widget {
-          display:none;
-        }
         #dlgeneric_hype_container {
           display:block !important;
         }
