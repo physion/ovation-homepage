@@ -102,28 +102,30 @@ $(document).ready(function() {
   // Changing the defaults
   window.sr = ScrollReveal({ reset: false });
 
-  // Customizing a reveal set
-  sr.reveal('#venn .left', {
-    origin: 'left',
-    duration: 2000,
-    distance: '500px' });
+  if ($(window).width() > 768) {
+    // Customizing a reveal set
+    sr.reveal('#venn .left', {
+      origin: 'left',
+      duration: 2000,
+      distance: '500px' });
 
-  sr.reveal('#venn .right', {
-    origin: 'right',
-    duration: 2000,
-    distance: '500px',
-    afterReveal: function (domEl) {
-      sr.reveal('.inner', {
-        duration:1000
-      });
-      sr.reveal('.vertical-line', {
-        duration:1000
-      });
-      sr.reveal('#center-text', {
-        duration:1000
-      });
-    }
-  });
+    sr.reveal('#venn .right', {
+      origin: 'right',
+      duration: 2000,
+      distance: '500px',
+      afterReveal: function (domEl) {
+        sr.reveal('.inner', {
+          duration:1000
+        });
+        sr.reveal('.vertical-line', {
+          duration:1000
+        });
+        sr.reveal('#center-text', {
+          duration:1000
+        });
+      }
+    });
+  };
 
 
 });
