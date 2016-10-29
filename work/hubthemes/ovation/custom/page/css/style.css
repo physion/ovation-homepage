@@ -9668,25 +9668,28 @@ body.pricing .pricing-faqs {
   body.pricing .feature-list {
     text-align: center; } }
 body.enterprise .body-container-wrapper .enterprise-cta {
-  color: #585858; }
+  color: #585858;
+  background-color: #f8f8f8; }
   body.enterprise .body-container-wrapper .enterprise-cta h1 {
     font-family: "proxima-nova", sans-serif;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     line-height: 1.5em;
     color: #585858; }
   body.enterprise .body-container-wrapper .enterprise-cta .span12 {
     padding: 80px 200px; }
   body.enterprise .body-container-wrapper .enterprise-cta .button, body.enterprise .body-container-wrapper .enterprise-cta .orange.hs-cta-wrapper a, .orange.hs-cta-wrapper body.enterprise .body-container-wrapper .enterprise-cta a, body.enterprise .body-container-wrapper .enterprise-cta .green.hs-cta-wrapper a, .green.hs-cta-wrapper body.enterprise .body-container-wrapper .enterprise-cta a {
     display: table;
-    margin: 0px auto; }
+    margin: 0px auto 20px; }
 body.enterprise .body-container-wrapper .features {
-  background-color: #ededed; }
+  background-color: #ffffff; }
   body.enterprise .body-container-wrapper .features .feature-container {
     max-width: 940px;
     float: none !important;
     margin: 0 auto 40px !important;
     padding: 0 20px; }
+  body.enterprise .body-container-wrapper .features ul {
+    margin-left: 0px !important; }
   body.enterprise .body-container-wrapper .features h1 {
     text-align: center;
     font-size: 48px;
@@ -9696,7 +9699,7 @@ body.enterprise .body-container-wrapper .features {
   body.enterprise .body-container-wrapper .features h2 {
     font-size: 36px;
     font-weight: 100;
-    color: #979797;
+    color: #585858;
     margin: 0;
     font-family: "proxima-nova", sans-serif; }
   body.enterprise .body-container-wrapper .features p {
@@ -9731,44 +9734,53 @@ body.enterprise .body-container-wrapper .enterprise-header {
     /*cover video background */
     z-index: -2; }
   body.enterprise .body-container-wrapper .enterprise-header .hr-box {
-    background: linear-gradient(to bottom, rgba(237, 237, 237, 0.8) 0, #ededed 100%); }
+    background: #ffffff; }
     body.enterprise .body-container-wrapper .enterprise-header .hr-box hr {
       margin: 40px 00px; }
   body.enterprise .body-container-wrapper .enterprise-header .header-copy {
     overflow: auto;
     background: rgba(255, 255, 255, 0.8);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.8)), color-stop(47%, rgba(246, 246, 246, 0.8)), color-stop(100%, rgba(237, 237, 237, 0.8)));
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(246, 246, 246, 0.8) 47%, rgba(237, 237, 237, 0.8) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.5)), color-stop(100%, white));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.5) 50%, white 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 ); }
     body.enterprise .body-container-wrapper .enterprise-header .header-copy h1 {
       line-height: 1.5em;
-      font-family: "Fanwood Text Italic", sans-serif; }
+      font-family: "Fanwood Text Italic", sans-serif;
+      color: #585858; }
     body.enterprise .body-container-wrapper .enterprise-header .header-copy p {
-      margin: 20px 0px; }
+      margin: 20px 0px;
+      color: #979797;
+      font-size: 24px; }
+      body.enterprise .body-container-wrapper .enterprise-header .header-copy p span {
+        font-size: 24px; }
     body.enterprise .body-container-wrapper .enterprise-header .header-copy hr {
       margin: 40px 0px; }
   body.enterprise .body-container-wrapper .enterprise-header .header-header {
-    height: 512px;
     text-align: center; }
     body.enterprise .body-container-wrapper .enterprise-header .header-header h1 {
-      margin-top: 300px;
       font-family: "proxima-nova", sans-serif;
-      color: #585858; }
+      color: #585858;
+      font-weight: 300; }
     body.enterprise .body-container-wrapper .enterprise-header .header-header h2 {
-      font-family: "Fanwood Text Italic", sans-serif;
+      font-family: "proxima-nova", sans-serif;
       color: #585858;
       margin: 40px 0px; }
 
 @media (min-width: 769px) {
+  .enterprise .enterprise-cta .cta-container {
+    max-width: 940px;
+    margin: 40px auto; }
+
   .header-header {
     height: 350px;
-    text-align: center; }
+    text-align: center;
+    height: 512px; }
     .header-header h1 {
       font-size: 96px;
       margin-top: 300px;
       margin-bottom: 50px; }
     .header-header h2 {
-      font-size: 60px; }
+      font-size: 48px; }
 
   .header-copy {
     padding: 40px 150px; }
@@ -9781,15 +9793,31 @@ body.enterprise .body-container-wrapper .enterprise-header {
   .enterprise .enterprise-header {
     background-image: url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/enterprise-device-bg.png");
     background-size: auto 100%;
-    z-index: -2; }
-    .enterprise .enterprise-header .header-header h1 {
-      font-size: 72px; }
-    .enterprise .enterprise-header .header-header h2 {
-      font-size: 48px; }
-    .enterprise .enterprise-header .header-copy {
-      padding: 40px 50px; }
+    z-index: -2; } }
+@media (max-width: 768px) and (min-width: 401px) {
+  .enterprise .enterprise-header .header-header h1 {
+    font-size: 72px;
+    margin-top: 250px; }
+  .enterprise .enterprise-header .header-header h2 {
+    font-size: 36px; }
+  .enterprise .enterprise-header .header-copy {
+    padding: 40px 50px; }
   .enterprise .features {
     padding: 50px 50px; } }
+@media (max-width: 400px) {
+  .enterprise .enterprise-cta .cta-container {
+    padding: 10px; }
+
+  .header-copy, .features {
+    padding: 0px 10px; }
+
+  .header-header {
+    margin-bottom: 250px; }
+    .header-header h1 {
+      font-size: 36px;
+      margin-top: 200px; }
+    .header-header h2 {
+      font-size: 24px; } }
 .landing-page {
   background-color: #f8f8f8; }
   .landing-page header .widget-type-logo {
