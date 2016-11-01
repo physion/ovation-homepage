@@ -56,11 +56,10 @@ body{
 
 .flex-menu {
   .hs-menu-children-wrapper {
-    display:block !important;
+    // display:block !important;
     max-height: 0;
     transition: max-height 0.5s ease-out;
     overflow: hidden;
-    margin-top:15px !important;
     li {
       // margin:5px 0px;
       border-bottom:none !important;
@@ -69,9 +68,13 @@ body{
   }
   .hs-item-has-children {
     //position: relative;
+    .hs-menu-children-wrapper {
+      // display:none;
+    }
     &.open {
 
       .hs-menu-children-wrapper {
+        //display:block !important;
         max-height: 300px;
         transition: max-height 0.5s ease-in;
       }
@@ -110,9 +113,11 @@ body{
   .hs-menu-wrapper {
     text-align:center;
     li {
-      padding:30px 0px;
       border-bottom: 1px solid #979797;
       &.hs-item-has-children {
+        ul {
+          margin-left: 0px;
+        }
       }
     }
 
@@ -159,11 +164,15 @@ header {
 
     &.hs-item-has-children {
       //position: relative;
+      .hs-menu-children-wrapper {
+        margin-left:0px;
+      }
       &.open {
 
         .hs-menu-children-wrapper {
           max-height: 200px;
           transition: max-height 0.5s ease-in;
+
         }
       }
       & > a:after {
@@ -187,9 +196,8 @@ header {
       transition: max-height 0.5s ease-out;
       overflow: hidden;
       li {
-        margin:15px 0px;
+      margin:15px 0px;
       }
-      margin:0px;
     }
 
   }
@@ -216,20 +224,36 @@ header {
 }
 
 @media (min-width: 911px) {
-  .overly_btn_block {
-    display:none;
+  .header-container-wrapper {
+    .overly_btn_block {
+      display:none;
+    }
   }
 }
 
 @media (min-width:769px) {
+  .header-container-wrapper {
   header {
     padding: 20px 40px;
   }
 }
+}
 
 @media (max-width:768px) {
+  .header-container-wrapper {
   header {
     padding: 10px 20px;
+  }
+}
+}
+
+@media (max-width:768px) and (min-width:401px) {
+  .header-container-wrapper {
+    .hs-menu-wrapper {
+      li {
+        padding:30px 0px;
+      }
+    }
   }
 }
 
@@ -269,6 +293,11 @@ header {
 
 @media (max-width:400px) {
   .flex-menu {
+    .hs-menu-wrapper {
+      li {
+        padding:15px 0px;
+      }
+    }
     h1 {
       font-size: 24px !important;
     }

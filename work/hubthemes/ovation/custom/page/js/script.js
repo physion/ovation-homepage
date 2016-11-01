@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
   $('.hs-item-has-children').click(function() {
+    $('.hs-item-has-children').not(this).removeClass('open');
+
     $(this).toggleClass( "open" );
   });
 
