@@ -39,7 +39,7 @@
           <div id="fullpage">
               <div class="section">
                 <video autoplay loop muted id="myVideo">
-            			<source src="http://cdn2.hubspot.net/hubfs/730505/new-website-assets/bg-movie.mp4" type="video/mp4">
+            	    <source src="http://cdn2.hubspot.net/hubfs/730505/new-website-assets/bg-movie.mp4" type="video/mp4">
                   <img src="http://cdn2.hubspot.net/hubfs/730505/homepage-bg.png" />
             		</video>
                 <div class="main-wrapper">
@@ -47,7 +47,7 @@
                     <div class="row-fluid-wrapper row-depth-1 row-number-1">
                       <div class="row-fluid">
                         <div class="span12">
-                          <h1><span id="change"><a href="#" class="one">Your Scientific Life</a></span>. Simplified.</h1>
+                          <h1 id="hero-title"><span id="change"><a href="#" class="one">Your Scientific Life.</a></span> <br class="header-break" /> Simplified.</h1>
                         </div>
                       </div>
                     </div>
@@ -77,10 +77,10 @@
               </div>
               <div class="section">
                 <div class="row main-container">
-                  <div class="span7 left-column-image">
-                    {% linked_image "home-1" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/collaboration-anim.gif', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+                  <div class="span7 left-column-image internal">
+                    {% linked_image "home-1" src='http://cdn2.hubspot.net/hubfs/730505/collab-anim-v2.gif', link='', wrapping_html='', overrideable=True, alt='collaboration', label='collaboration', open_in_new_tab=False %}
                   </div>
-                  <div class="span5 collaboration-copy">
+                  <div class="span5 collaboration-copy internal top">
                         {% widget_block rich_text "home-2" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
                             <h1>What is a user?</h1>
                             <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
@@ -98,7 +98,7 @@
                     <!-- end HubSpot Call-to-Action Code -->
                   </div>
                   <div class="span7 device-image">
-                    {% linked_image "still-1" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/collaboration-still-homepage.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+                    {% linked_image "home-device-1" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/collaboration-still-homepage.png', link='', wrapping_html='', overrideable=True, alt='collaboration-device', label='collaboration-device', open_in_new_tab=False %}
                   </div>
                   <div class="span12 mobile-cta">
                     <span class="hs-cta-wrapper" id="hs-cta-wrapper-ba4e7f24-d953-4cc6-8c0c-3d64b569fc2e">
@@ -116,19 +116,15 @@
               </div>
               <div class="section">
                 <div class="row main-container">
-                  <row>
-                    <div class="span12">
-                      {% header "home-4" header_tag='h1', overrideable=True, wrapping_html='', value='Ovation provides unprecedented visibility into your samples’ progress', label='Main Headline' %}
-                    </div>
-                  </row>
                   <div class="row">
-                    <div class="span6 main-image">
-                      {% linked_image "home-5" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/workflow-anim.gif', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+                    <div class="span7 main-image internal">
+                      {% linked_image "home-2" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/workflow-anim.gif', link='', wrapping_html='', overrideable=True, alt='sample-tracking', label='sample tracking', open_in_new_tab=False %}
                     </div>
-                    <div class="span6 device-image">
-                      {% linked_image "miami-10" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/sample-static.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+                    <div class="span6 device-image top">
+                      {% linked_image "home-device-2" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/sample-static.png', link='', wrapping_html='', overrideable=True, alt='sample-tracking-device', label='sample tracking device', open_in_new_tab=False %}
                     </div>
-                    <div class="span6 sample-copy">
+                    <div class="span5 sample-copy internal">
+                      {% header "home-4" header_tag='h1', overrideable=True, wrapping_html='', value='Ovation provides unprecedented visibility into your samples’ progress', label='Main Headline' %}
                       {% widget_block rich_text "module_sampe-copy" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
                       <p><span class="s1">Ovation Service Lab takes a whole new twist on the laboratory information management system (LIMS) by combining the essential elements of sample tracking, workflow management, document control, and training management all in one system.  It even offers sales, customer and physician portals, making you an instant full-service lab.  Whether you are performing NGS services or qPCR clinical diagnostics, Ovation Service Lab has you covered.</span></p>{%
                       end_widget_attribute %} {% end_widget_block %}
@@ -148,7 +144,7 @@
               </div>
               <div class="section">
                 <div class="row main-container">
-                  <div class="span5 data-management-copy">
+                  <div class="span5 data-management-copy internal top">
                             {% widget_block rich_text "home-6" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
                             <h1>What is a user?</h1>
                             <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
@@ -165,8 +161,11 @@
                     </span>
                     <!-- end HubSpot Call-to-Action Code -->
                   </div>
-                  <div class="span7">
-                    {% linked_image "home-7" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/placeholder-a1a.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+                  <div class="span7 internal left-column-image">
+                    {% linked_image "home-2" src='http://cdn2.hubspot.net/hubfs/730505/sample-tracking-v1.gif', link='', wrapping_html='', overrideable=True, alt='data-management', label='data management', open_in_new_tab=False %}
+                  </div>
+                  <div class="span7 device-image">
+                    {% linked_image "home-device-2" src='http://cdn2.hubspot.net/hubfs/730505/sample-tracking-device.png', link='', wrapping_html='', overrideable=True, alt='collaboration-device', label='collaboration-device', open_in_new_tab=False %}
                   </div>
                   <div class="span12 mobile-cta">
                     <span class="hs-cta-wrapper" id="hs-cta-wrapper-ba4e7f24-d953-4cc6-8c0c-3d64b569fc2e">
@@ -185,12 +184,10 @@
                 </div>
               </div>
               <div class="section">
-                <div class="row main-container">
-                  <div class="span12">
-                    {% header "home-8" header_tag='h1', overrideable=True, wrapping_html='', value='A data layer to bring all of your scientific software together', label='Main Headline' %}
-                  </div>
+                <div class="row main-container ">
                   <div class="row">
-                    <div class="span6">
+                    <div class="span5 internal top">
+                      {% header "home-8" header_tag='h1', overrideable=True, wrapping_html='', value='A data layer to bring all of your scientific software together', label='Main Headline' %}
                       {% widget_block rich_text "home-10" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
                             <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
                             end_widget_attribute %} {% end_widget_block %}
@@ -207,8 +204,11 @@
                       </span>
                       <!-- end HubSpot Call-to-Action Code -->
                     </div>
-                    <div class="span6">
-                      {% linked_image "popeye" src='http://cdn2.hubspot.net/hubfs/730505/enterprise.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+                    <div class="span7 internal main-image">
+                      {% linked_image "home-5" src='http://cdn2.hubspot.net/hubfs/730505/enterprise-anim.gif', link='', wrapping_html='', overrideable=True, alt='enterprise', label='enterprise', open_in_new_tab=False %}
+                    </div>
+                    <div class="span7 device-image">
+                      {% linked_image "home-device-5" src='http://cdn2.hubspot.net/hubfs/730505/enterprise-still.png', link='', wrapping_html='', overrideable=True, alt='enterprise-device', label='enterprise-device', open_in_new_tab=False %}
                     </div>
                   </div>
                 </div>

@@ -36,16 +36,16 @@
     <div class="body-container container-fluid">
       <div class="row hero not-a">
         <div class="nav-elements">
-          <a href="https://www.ovation.io/platform"><div class="arrow right"></div></a>
           <ul class="products-nav">
             <li class="active"><a href="">Research</a></li>
             <li><a href="https://www.ovation.io/platform">Platform</a></li>
             <li><a href="https://www.ovation.io/service-lab">Service Lab</a></li>
         </div>
         <h1 style="font-size:50px;color:white;text-align:center;padding-bottom:20px;">Ovation Research</h1>
-        {% linked_image "module_about_4" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/or-graphic.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+        {% linked_image "or-image-main" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/or-graphic.png', link='', wrapping_html='', overrideable=True, alt='or-data-layer', label='or-data-layer-main', open_in_new_tab=False %}
       </div>
       <div class="row video-container">
+        <div class="span12">
         <div class="row">
           <div>
             {% header "miami" header_tag='h1', overrideable=True, wrapping_html='', value='Powerful data curation, collaboration, and storage tools at your fingertips', label='Main Headline' %}
@@ -59,47 +59,58 @@
           </div>
         </div>
       </div>
+      </div>
       <div class="ping-pong row-fluid">
         <div class="ping-pong-container">
           <div class="span6">
-{% widget_block rich_text "product-a-2" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
-                            <h1>Headline</h1>
-                            <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
-                            end_widget_attribute %} {% end_widget_block %}             </div>
-          <div class="span6">
-            {% linked_image "module_image-1" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% header "or-feature-header-1" header_tag='h1', overrideable=True, wrapping_html='', value='Check out the plans. What could it hurt?', label='Main Headline' %}
+            <div class="device-image">{% linked_image "or-feature-1-device-image" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='feature-1', label='Collaboration', open_in_new_tab=False %}</div>
+{% widget_block rich_text "or-feature-copy-1" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %}
+{% widget_attribute "html" %}
+                            <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>
+                            {% end_widget_attribute %}
+                            {% end_widget_block %}
+          </div>
+          <div class="span6 feature-image">
+            {% linked_image "or-feature-1" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='feature-1', label='Collaboration', open_in_new_tab=False %}
           </div>
 
         </div>
       </div>
       <div class="ping-pong row-fluid">
         <div class="ping-pong-container">
-          <div class="span6">
-            {% linked_image "module_header-1" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+          <div class="span6 feature-image">
+            {% linked_image "or-feature-2" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='feature-2', label='OR Feature 2', open_in_new_tab=False %}
           </div>
           <div class="span6">
-{% widget_block rich_text "product-a-3" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
-                            <h1>Headline</h1>
-                            <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
-                            end_widget_attribute %} {% end_widget_block %}             </div>
-
-        </div>
+            {% header "or-feature-header-2" header_tag='h1', overrideable=True, wrapping_html='', value='Check out the plans. What could it hurt?', label='Main Headline' %}
+            <div class="device-image">{% linked_image "or-feature-2-device-image" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='feature-1', label='Collaboration', open_in_new_tab=False %}</div>
+{% widget_block rich_text "or-feature-copy-2" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %}
+{% widget_attribute "html" %}
+              <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>
+              {% end_widget_attribute %}
+              {% end_widget_block %}
+          </div>
       </div>
       <div class="ping-pong row-fluid">
         <div class="ping-pong-container">
           <div class="span6">
-{% widget_block rich_text "product-a-1" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
-                            <h1>Headline</h1>
-                            <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
-                            end_widget_attribute %} {% end_widget_block %}             </div>
-          <div class="span6">
-            {% linked_image "module_image-3" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% header "or-feature-header-3" header_tag='h1', overrideable=True, wrapping_html='', value='Check out the plans. What could it hurt?', label='Main Headline' %}
+            <div class="device-image">{% linked_image "or-feature-3-device-image" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='feature-1', label='Collaboration', open_in_new_tab=False %}</div>
+{% widget_block rich_text "or-feature-copy-3" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %}
+{% widget_attribute "html" %}
+                <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>
+                {% end_widget_attribute %}
+                {% end_widget_block %}
+          </div>
+          <div class="span6 feature-image">
+            {% linked_image "or-feature-3" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='or-feature-3', label='OR Feature 3', open_in_new_tab=False %}
           </div>
         </div>
       </div>
       <div class="cta row-fluid">
         <div class="cta-container">
-          {% header "module_about_1" header_tag='h1', overrideable=True, wrapping_html='', value='Check out the plans. What could it hurt?', label='Main Headline' %}
+          {% header "or-cta-header" header_tag='h1', overrideable=True, wrapping_html='', value='Check out the plans. What could it hurt?', label='Main Headline' %}
           <!--HubSpot Call-to-Action Code -->
           <span class="hs-cta-wrapper orange button large" id="hs-cta-wrapper-702b6667-32a7-452c-92ca-ec9aaee3b35c">
               <span class="hs-cta-node hs-cta-702b6667-32a7-452c-92ca-ec9aaee3b35c" id="hs-cta-702b6667-32a7-452c-92ca-ec9aaee3b35c">
@@ -112,7 +123,7 @@
               </script>
           </span>
           <!-- end HubSpot Call-to-Action Code -->
-{% widget_block rich_text "product-a-4" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
+{% widget_block rich_text "or-cta-copy" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
                             <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
                             end_widget_attribute %} {% end_widget_block %}          </div>
       </div>
@@ -143,6 +154,7 @@
 <script src={{ get_public_template_url("custom/page/js/jquery.overly.js") }}></script>
 <script src={{ get_public_template_url("custom/page/js/jquery.fullPage.min.js") }}></script>
 <script src={{ get_public_template_url("custom/page/js/script.min.js") }}></script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
   <script>
     $(window).scroll(function() {

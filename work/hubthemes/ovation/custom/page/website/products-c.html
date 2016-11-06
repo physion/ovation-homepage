@@ -36,16 +36,16 @@
     <div class="body-container container-fluid">
       <div class="row hero not-a">
         <div class="nav-elements">
-          <a href="https://www.ovation.io/platform"><div class="arrow left"></div></a>
           <ul class="products-nav">
             <li><a href="https://www.ovation.io/research">Research</a></li>
             <li><a href="https://www.ovation.io/platform">Platform</a></li>
             <li class="active"><a href="#research">Service Lab</a></li>
         </div>
         <h1 style="font-size:50px;color:white;text-align:center;padding-bottom:20px;">Ovation Service Lab</h1>
-        {% linked_image "module_about_4" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/osl-hero.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+        {% linked_image "osl-image-main" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/osl-hero.png', link='', wrapping_html='', overrideable=True, alt='osl-image-main', label='OSL Image Main', open_in_new_tab=False %}
       </div>
       <div class="row video-container">
+        <div class="span12">
         <div class="row">
           <div>
             {% header "osl-header_1" header_tag='h1', overrideable=True, wrapping_html='', value='Powerful data curation, collaboration, and storage tools at your fingertips', label='Main Headline' %}
@@ -58,54 +58,70 @@
 
           </div>
         </div>
-      </div>
-      <div class="ping-pong row-fluid">
-        <div class="ping-pong-container">
-          <div class="span6">
-            {% linked_image "module-header-1" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
-          </div>
-          <div class="span6">
-{% widget_block rich_text "product-b-1" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
-                            <h1>Headline</h1>
-                            <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
-                            end_widget_attribute %} {% end_widget_block %}           </div>
         </div>
       </div>
       <div class="ping-pong row-fluid">
         <div class="ping-pong-container">
+          <div class="span6 feature-image">
+            {% linked_image "osl-feature-1" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='osl-feature-1', label='OSL Feature 1', open_in_new_tab=False %}
+          </div>
           <div class="span6">
-{% widget_block rich_text "product-b-2" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
-                            <h1>Headline</h1>
-                            <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
-                            end_widget_attribute %} {% end_widget_block %}             </div>
-          <div class="span6">
-            <h1 style="font-size:50px;color:white;text-align:center;padding-bottom:20px;">Ovation Service Lab</h1>
-            {% linked_image "module_image-2" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% header "osl-feature-header-1" header_tag='h1', overrideable=True, wrapping_html='', value='Check out the plans. What could it hurt?', label='Main Headline' %}
+            <div class="device-image">{% linked_image "osl-feature-1-device-image" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='feature-1', label='Collaboration', open_in_new_tab=False %}</div>
+{% widget_block rich_text "osl-feature-copy-1" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %}
+{% widget_attribute "html" %}
+                <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>
+                {% end_widget_attribute %}
+                {% end_widget_block %}
           </div>
         </div>
       </div>
       <div class="ping-pong row-fluid">
         <div class="ping-pong-container">
           <div class="span6">
-            {% linked_image "module_image-3" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% header "osl-feature-header-2" header_tag='h1', overrideable=True, wrapping_html='', value='Check out the plans. What could it hurt?', label='Main Headline' %}
+            <div class="device-image">{% linked_image "osl-feature-2-device-image" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='feature-1', label='Collaboration', open_in_new_tab=False %}</div>
+{% widget_block rich_text "osl-feature-copy-2" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %}
+{% widget_attribute "html" %}
+                <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>
+                {% end_widget_attribute %}
+                {% end_widget_block %}
+          </div>
+          <div class="span6 feature-image">
+            {% linked_image "osl-feature-2" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='osl-feature-2', label='OSL Feature 2', open_in_new_tab=False %}
+          </div>
+        </div>
+      </div>
+      <div class="ping-pong row-fluid">
+        <div class="ping-pong-container">
+          <div class="span6 feature-image">
+            {% linked_image "osl-feature-3" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='osl-feature-3', label='OSL Feature 3', open_in_new_tab=False %}
           </div>
           <div class="span6">
-{% widget_block rich_text "product-b-4" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
-                            <h1>Headline</h1>
-                            <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
-                            end_widget_attribute %} {% end_widget_block %}             </div>
+            {% header "osl-feature-header-3" header_tag='h1', overrideable=True, wrapping_html='', value='Check out the plans. What could it hurt?', label='Main Headline' %}
+            <div class="device-image">{% linked_image "osl-feature-3-device-image" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='feature-1', label='Collaboration', open_in_new_tab=False %}</div>
+{% widget_block rich_text "osl-feature-copy-3" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %}
+{% widget_attribute "html" %}
+                <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>
+                {% end_widget_attribute %}
+                {% end_widget_block %}
+          </div>
 
         </div>
       </div>
       <div class="ping-pong row-fluid">
         <div class="ping-pong-container">
           <div class="span6">
-{% widget_block rich_text "product-b-3" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %} {% widget_attribute "html" %}
-                            <h1>Headline</h1>
-                            <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>{%
-                            end_widget_attribute %} {% end_widget_block %}             </div>
-          <div class="span6">
-            {% linked_image "module_image-4" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
+            {% header "osl-feature-header-4" header_tag='h1', overrideable=True, wrapping_html='', value='Check out the plans. What could it hurt?', label='Main Headline' %}
+            <div class="device-image">{% linked_image "osl-feature-4-device-image" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='feature-1', label='Collaboration', open_in_new_tab=False %}</div>
+{% widget_block rich_text "osl-feature-copy-4" cell=false, cells='[]', ending_html='', overrideable=true, root=false, row=false, starting_html='', label='Rich Text' %}
+{% widget_attribute "html" %}
+                <p class="p1"><span class="s1">Readymade flannel disrupt, trust fund jean shorts celiac asymmetrical vice tacos meggings messenger bag PBR&amp;B swag hella. Authentic chambray everyday carry church-key hammock, pabst chartreuse migas man braid street art meditation craft beer echo park austin. Typewriter chambray synth paleo sartorial fingerstache. Narwhal squid echo park retro. </span></p>
+                {% end_widget_attribute %}
+                {% end_widget_block %}
+          </div>
+          <div class="span6 feature-image">
+            {% linked_image "osl-feature-4" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/ping-pong-placeholder.png', link='', wrapping_html='', overrideable=True, alt='osl-feature-4', label='OSL Feature 4', open_in_new_tab=False %}
           </div>
         </div>
       </div>
@@ -155,6 +171,7 @@
 <script src={{ get_public_template_url("custom/page/js/jquery.overly.js") }}></script>
 <script src={{ get_public_template_url("custom/page/js/jquery.fullPage.min.js") }}></script>
 <script src={{ get_public_template_url("custom/page/js/script.min.js") }}></script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
   <script>
     $(window).scroll(function() {

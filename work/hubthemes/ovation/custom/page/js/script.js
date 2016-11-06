@@ -13,6 +13,8 @@ $(document).ready(function() {
   });
 
 
+
+
   $('#fullpage').fullpage({
       //Navigation
       menu: '#menu',
@@ -27,6 +29,7 @@ $(document).ready(function() {
       //slidesNavigation: true,
       loopBottom: true,
       onLeave: function(nextIndex, anchorLink, navigation){
+
         if (anchorLink == 1 ) {
           $('body .header-container-wrapper').addClass('transparent');
         } else {
@@ -40,21 +43,30 @@ $(document).ready(function() {
           $(".arrow").show();
           $("footer h2").html('Sample Tracking');
           $("footer #footer-nav-link").attr("href", "#sample-tracking");
-          $('.left-column-image img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/new-website-assets/collaboration-anim.gif');
+          if ($(window).width() > 768) {
+            $('.left-column-image img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/collab-anim-v2.gif');
+          }
         } else if (anchorLink == 3) {
           $(".arrow").show();
           $("footer h2").html('Data Management');
           $("footer #footer-nav-link").attr("href", "#data-management");
-          $('.main-image img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/new-website-assets/workflow-anim.gif');
+          if ($(window).width() > 768) {
+            $('.main-image img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/sample-tracking-v1.gif');
+          }
         } else if (anchorLink == 4) {
           http://cdn2.hubspot.net/hubfs/730505/new-website-assets/provenance-anim.gif
           $(".arrow").show();
           $("footer h2").html('Enterprise');
           $("footer #footer-nav-link").attr("href", "#enterprise");
-          $('img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/new-website-assets/provenance-anim.gif');
+          if ($(window).width() > 768) {
+            $('.left-column-image img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/provenance-anim-v1.gif');
+          }
         } else if (anchorLink == 5) {
           $("footer h2").html('Home');
           $("footer #footer-nav-link").attr("href", "#home");
+          if ($(window).width() > 768) {
+            $('.main-image img').prop('src', 'http://cdn2.hubspot.net/hubfs/730505/enterprise-anim.gif');
+          }
           $(".arrow").hide();
         }
       },
@@ -66,7 +78,7 @@ $(document).ready(function() {
   });
 
   //function headlineRotate() {
-  array = ["<a href='#collaboration'>Collaboration</a>","<a href='#sample-tracking'>Sample Tracking</a>","<a href='#data-management'>Data Management</a>","<a href='#enterprise'>Enterprise</a>"];
+  array = ["<a href='#collaboration'>Collaboration.</a>","<a href='#sample-tracking'>Sample Tracking.</a>","<a href='#data-management'>Data Management.</a>","<a href='#enterprise'>Enterprise.</a>"];
 
 
 
@@ -128,6 +140,27 @@ $(document).ready(function() {
       }
     });
   };
+
+  function animation() {
+    $('#dlv4_hype_container').toggleClass('hide', $(window).width() < 769);
+    $('#dltabletv2_hype_container').toggleClass('hide', $(window).width() >= 768 || $(window).width() < 401);
+    $('#dlmobilev3_hype_container').toggleClass('hide', $(window).width() > 400);
+  }
+
+  function homepagePosition() {
+    if ($(window).width() > 768) {
+      $('.homepage .internal').css('margin-top', 50 + $(window).height()*.1);
+    }
+  }
+
+  homepagePosition();
+
+  animation();
+
+  $(window).on('resize', function () {
+      animation();
+      homepagePosition();
+  });
 
 
 });

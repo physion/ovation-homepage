@@ -1,8 +1,9 @@
 body {
   &.products {
-    #dlgeneric_hype_container {
+    .hide {
       display:none;
     }
+
 
     .products-nav {
 
@@ -93,14 +94,12 @@ body {
         margin:0px;
       }
       .hero {
-        padding:150px 0px 50px;
         position:relative;
       }
       .video-container {
         background-color: #F8F8F8;
         box-shadow: 0px 2px 4px 0px rgba(187,187,187,0.50);
         h1 {
-          font-size:36px;
           color:#5F5F5F;
           text-align:center;
           margin-bottom:30px;
@@ -108,13 +107,8 @@ body {
       }
       .ping-pong {
 
-        img {
-          margin:0px auto;
-          display:table;
-          width:80%;
-        }
+
         h1 {
-          font-size:36px;
           font-family:$proxima-nova-light;
           line-height:1.25em;
           margin-bottom:20px;
@@ -134,7 +128,6 @@ body {
 
           h1 {
             text-align:center;
-            font-size:48px;
             line-height:1.5em;
             margin-bottom:40px;
           }
@@ -142,21 +135,29 @@ body {
             margin:0px auto 40px;
             display:table;
           }
-          .main-copy {
+          .p {
             text-align:center;
             font-family:$fanwood-text-italic;
             color:#858585;
+            i {
+              text-align:center;
+              font-family:$fanwood-text-italic;
+              color:#858585;
+            }
           }
         }
       }
     }
     .body-container {
+      /*
       padding-top:150px;
       padding-left:5%;
       padding-right:5%;
+      */
     }
   }
 }
+
 @media (min-width: 769px) {
   body {
     &.products {
@@ -168,18 +169,36 @@ body {
         }
       }
       &.products-a {
-        .hero {
-          img {
-            display:none;
-          }
-        }
+
+      }
+      .feature-image {
+        display:block;
+      }
+      .device-image {
+        display:none;
       }
      .body-container {
+       .hero {
+         padding:150px 0px 50px;
+       }
        .video-container {
-        padding:50px 200px;
+        padding:50px 100px;
+        .span12 {
+          margin: 0px auto !important;
+          display:table;
+          float:none;
+        }
+        .row {
+          margin-left:0px !important;
+        }
        }
        .ping-pong-container {
          padding:60px 120px;
+         img {
+           margin:0px auto;
+           display:table;
+           width:80%;
+         }
        }
        .cta-container {
          padding:80px 150px;
@@ -190,9 +209,7 @@ body {
            line-height:1.25em;
          }
        }
-        #dlgeneric_hype_container {
-          display:block !important;
-        }
+
         .products-nav {
           left:calc(50% - 280px);
           li {
@@ -215,10 +232,20 @@ body {
 
 @media (max-width: 768px) {
   body {
-    .body-container {
-      //padding-top:125px !important;
-    }
+
     &.products {
+
+      &.products-b,&.products-c {
+        .hero img {
+          margin-bottom:100px;
+        }
+        .feature-image {
+          display:none;
+        }
+        .device-image {
+          display:block;
+        }
+      }
       .hero {
         h1 {
           font-size:24px;
@@ -227,15 +254,29 @@ body {
         img {
           width:100%;
         }
+        padding:100px 0px 0px;
       }
       .video-container {
-       padding:10px 30px;
+        padding:10px 30px;
       }
       .cta-container {
         padding:20px 20px;
       }
       .ping-pong-container {
+        max-width:80%;
         padding:20px 10px;
+        margin:0px auto;
+        display:table;
+        h1 {
+          text-align:center;
+        }
+        img {
+          max-width:50%;
+          margin:20px auto;
+        }
+        .span6 {
+          width:100%;
+        }
       }
       .products-nav {
         left:calc(50% - 168px);
@@ -255,5 +296,52 @@ body {
           display:block;
         }
       }
+
     }
+
+}
+
+@media (min-width: 401px) {
+  .video-container {
+    h1 {
+      font-size:36px;
+    }
+  }
+  .ping-pong {
+    h1 {
+      font-size:36px;
+    }
+  }
+  .products {
+
+    .cta-container {
+      .ping-pong {
+        h1 {
+          font-size:48px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .video-container {
+    h1 {
+      font-size:24px;
+    }
+  }
+  .ping-pong {
+    h1 {
+      font-size:24px;
+    }
+  }
+  .products {
+    .cta-container {
+      .ping-pong {
+        h1 {
+          font-size:36px;
+        }
+      }
+    }
+  }
 }

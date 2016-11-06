@@ -60,8 +60,15 @@ strong, b {
 }
 
 em, i {
-	font-weight: normal;
-  font-family: $proxima-nova-italic;
+	font-family: $fanwood-text;
+}
+
+i {
+	font-style: italic;
+}
+
+em {
+	font-weight:700;
 }
 
 p {

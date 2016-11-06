@@ -35,8 +35,6 @@
   <div class="body-container-wrapper">
     <div class="body-container container-fluid">
       <div class="nav-elements">
-        <a href="https://www.ovation.io/research"><div class="arrow left"></div></a>
-        <a href="https://www.ovation.io/service-lab"><div class="arrow right"></div></a>
         <ul class="products-nav">
           <li><a href="https://www.ovation.io/research">Research</a></li>
           <li class="active"><a href="">Platform</a></li>
@@ -44,9 +42,15 @@
       </div>
       <div class="row hero">
           <h1 style="font-size:50px;color:white;text-align:center;padding-bottom:20px;">Ovation's Scientific Data Layer</h1>
-          {% linked_image "module_about_9" src='http://cdn2.hubspot.net/hubfs/730505/new-website-assets/Screen_Shot_2016-10-17_at_4.17.26_AM.png', link='', wrapping_html='', overrideable=True, alt='banner-image.jpg', label='background Image', open_in_new_tab=False %}
-          <div id="dlgeneric_hype_container" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;" aria-live="polite">
-        		<script type="text/javascript" charset="utf-8" src="http://cdn2.hubspot.net/hubfs/730505/new-website-assets/data-layer-final/dlgeneric_hype_generated_script.js"></script>
+
+          <div id="dlv4_hype_container" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;" aria-live="polite">
+        		<script type="text/javascript" charset="utf-8" src="http://cdn2.hubspot.net/hubfs/730505/new-website-assets/dl-v4.hyperesources/dlv4_hype_generated_script.js"></script>
+        	</div>
+            <div id="dltabletv2_hype_container" class="hide" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;" aria-live="polite">
+            	<script type="text/javascript" charset="utf-8" src="http://cdn2.hubspot.net/hubfs/730505/new-website-assets/dl-tablet-v2.hyperesources/dltabletv2_hype_generated_script.js"></script>
+        	</div>
+          <div id="dlmobilev3_hype_container" class="hide" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;" aria-live="polite">
+        		<script type="text/javascript" charset="utf-8" src="http://cdn2.hubspot.net/hubfs/730505/new-website-assets/dl-mobile-v3.hyperesources/dlmobilev3_hype_generated_script.js"></script>
         	</div>
 
       </div>
@@ -62,10 +66,12 @@
   if (typeof jQuery == 'undefined') {
     document.write(unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'%3E%3C/script%3E"));
   }
+
 </script>
 <script src={{ get_public_template_url("custom/page/js/jquery.overly.js") }}></script>
 <script src={{ get_public_template_url("custom/page/js/jquery.fullPage.min.js") }}></script>
 <script src={{ get_public_template_url("custom/page/js/script.min.js") }}></script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
 
 
