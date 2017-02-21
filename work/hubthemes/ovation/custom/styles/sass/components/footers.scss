@@ -30,11 +30,12 @@
     }
 
     a {
-      position:absolute;
+      position:fixed;
+
       margin:0px auto;
       display:block;
       width:300px;
-      top:15%;
+      bottom:10px;
       left:calc(50% - 150px);
       &:hover {
         text-decoration:none;

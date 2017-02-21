@@ -142,9 +142,9 @@ $(document).ready(function() {
   };
 
   function animation() {
-    $('#dlv4_hype_container').toggleClass('hide', $(window).width() < 769);
-    $('#dltabletv2_hype_container').toggleClass('hide', $(window).width() >= 768 || $(window).width() < 401);
-    $('#dlmobilev3_hype_container').toggleClass('hide', $(window).width() > 400);
+    $('#dlnotbroken_hype_container').toggleClass('hide', $(window).width() < 769);
+    $('#dltabletfast_hype_container').toggleClass('hide', $(window).width() >= 768 || $(window).width() < 401);
+    $('#dlmobilefast_hype_container').toggleClass('hide', $(window).width() > 400);
   }
 
   function homepagePosition() {

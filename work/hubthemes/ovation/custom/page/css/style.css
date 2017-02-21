@@ -8510,24 +8510,30 @@ button {
   .widget-type-logo {
     width: 200px !important;
     float: left; } }
-body .header-container-wrapper.transparent {
+body.homepage .transparent {
   background-color: transparent; }
-  body .header-container-wrapper.transparent .hs-menu-wrapper a {
-    color: white;
-    text-align: center;
-    display: block; }
-  body .header-container-wrapper.transparent .hs-menu-wrapper li {
+body.products-a .transparent {
+  background-color: #38A421; }
+body.products-b .transparent {
+  background-color: #FF780C; }
+body.products-c .transparent {
+  background-color: #E42D71; }
+body .header-container-wrapper.transparent .hs-menu-wrapper a {
+  color: white;
+  text-align: center;
+  display: block; }
+body .header-container-wrapper.transparent .hs-menu-wrapper li {
+  color: white !important; }
+  body .header-container-wrapper.transparent .hs-menu-wrapper li:before {
     color: white !important; }
-    body .header-container-wrapper.transparent .hs-menu-wrapper li:before {
-      color: white !important; }
-  body .header-container-wrapper.transparent .logo {
-    background-image: url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/white-logo.png");
-    width: 135px;
-    height: 60px;
-    background-size: 100% auto;
-    background-repeat: no-repeat; }
-  body .header-container-wrapper.transparent #overly_open {
-    color: white; }
+body .header-container-wrapper.transparent .logo {
+  background-image: url("http://cdn2.hubspot.net/hubfs/730505/new-website-assets/white-logo.png");
+  width: 135px;
+  height: 60px;
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+body .header-container-wrapper.transparent #overly_open {
+  color: white; }
 
 .header-container-wrapper .container-fluid {
   padding: 0px; }
@@ -8715,11 +8721,11 @@ header {
   .homepage .footer-container-wrapper footer {
     position: relative; }
   .homepage .footer-container-wrapper a {
-    position: absolute;
+    position: fixed;
     margin: 0px auto;
     display: block;
     width: 300px;
-    top: 15%;
+    bottom: 10px;
     left: calc(50% - 150px); }
     .homepage .footer-container-wrapper a:hover {
       text-decoration: none; }
@@ -8925,6 +8931,9 @@ button[disabled] {
   .span7 {
     width: 100% !important; }
 
+  .span5 {
+    margin-top: 0px !important; }
+
   br.header-break {
     display: block; }
 
@@ -8971,13 +8980,14 @@ button[disabled] {
     display: none !important; } }
 @media (max-width: 768px) and (min-width: 402px) {
   .top {
-    margin-top: 150px; }
+    margin-top: 150px !important; }
 
   .left-column-image {
     display: none !important; }
 
   .device-image img {
-    height: 300px; }
+    height: 300px;
+    width: auto !important; }
 
   .homepage:not(.fp-viewing-home) .body-container h1, .homepage:not(.fp-viewing-home) .body-container a {
     text-align: center; }
@@ -9549,7 +9559,7 @@ body.pricing .pricing-main {
     body.pricing .pricing-main .osl-add-ons .add-on-box {
       background-color: #fff;
       margin-bottom: 40px;
-      height: 335px;
+      height: 370px;
       box-shadow: 0px 2px 4px 0px rgba(187, 187, 187, 0.5);
       border-radius: 2px;
       padding: 20px 15px 30px; }
@@ -9787,7 +9797,7 @@ body.enterprise .body-container-wrapper .enterprise-header {
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
-    background-color: black;
+    background-color: #f8f8f8;
     /* in case the video doesn't fit the whole page*/
     background-position: center center;
     background-size: contain;

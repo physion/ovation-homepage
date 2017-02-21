@@ -1,6 +1,25 @@
 body{
+  &.homepage {
+    .transparent {
+      background-color:transparent;
+    }
+  }
+  &.products-a {
+    .transparent {
+      background-color: #38A421;
+    }
+  }
+  &.products-b {
+    .transparent {
+      background-color: #FF780C;
+    }
+  }
+  &.products-c {
+    .transparent {
+      background-color: #E42D71;
+    }
+  }
   .header-container-wrapper.transparent {
-    background-color:transparent;
 
     .hs-menu-wrapper {
       a {
